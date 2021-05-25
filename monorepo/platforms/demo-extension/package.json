@@ -11,6 +11,7 @@
     "element-plus": "^1.0.2-beta.44"
   },
   "devDependencies": {
+    "@vitejs/plugin-legacy": "^1.4.0",
     "@vitejs/plugin-vue": "^1.2.2",
     "@vue/compiler-sfc": "^3.0.5",
     "vite-plugin-singlefile": "^0.5.1",

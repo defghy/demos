@@ -1,7 +1,9 @@
 import path from 'path';
 import { defineConfig } from 'vite'
+
 import vue from '@vitejs/plugin-vue'
 import { viteSingleFile } from 'vite-plugin-singlefile';
+import legacy from '@vitejs/plugin-legacy';
 
 const isDev = process.env.BUILD_ENV === 'development';
 
@@ -24,5 +26,9 @@ export default defineConfig({
       },
     },
   },
-  plugins: [vue(), viteSingleFile()]
+  plugins: [
+    vue(),
+    viteSingleFile(),
+    // legacy({ targets: ['chrome >= 60'] }),
+  ]
 })
