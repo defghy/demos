@@ -2,11 +2,11 @@
   "version": "0.0.1",
   "manifest_version": 3,
   "name": "Demo Extv3",
-  "description": "KwaiBI Chrome 扩展",
+  "description": "Chrome 扩展",
   "action": {
     "default_icon": "logo.png",
     "default_title": "OnCall神器",
-    "default_popup": "popup.html"
+    "default_popup": "web/index.html"
   },
   "permissions": [
     "storage",
