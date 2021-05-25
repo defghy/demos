@@ -1,0 +1,48 @@
+{
+  "version": "0.0.1",
+  "manifest_version": 3,
+  "name": "Demo Extv3",
+  "description": "KwaiBI Chrome 扩展",
+  "action": {
+    "default_icon": "logo.png",
+    "default_title": "OnCall神器",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "storage",
+    "tabs",
+    "cookies",
+    "notifications",
+    "declarativeContent"
+  ],
+  "host_permissions": [
+    "*://*/*"
+  ],
+  "homepage_url": "http://localhost",
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*/*"
+      ],
+      "js": ["feedback.js"],
+      "run_at": "document_idle"
+    },
+    {
+      "matches": [
+        "*://*/*"
+      ],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "externally_connectable": {
+    "ids": ["bkdpjjklmkgoheiekoagleeloknmbeog"],
+    "matches": ["*://*/*"]
+  }
+}
