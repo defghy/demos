@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="pragma" content="no-cache">
+  <script src="../assets/vue.js"></script>
+  <title>speech</title>
+
+<style type="text/css">
+
+</style>
+
+</head>
+
+<body>
+<div id='vue-app'>
+  <span v-html="content"></span>
+  <button @click="toggleListen">{{ isListen ? '停止' : '开始' }}</button>
+</div>
+
+<script type="text/javascript">
+const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+const recognition = new SpeechRecognition();
+recognition.continuous = true;
+recognition.interimResults = true;
+
+
+new Vue({
+    el:"#vue-app",
+    data:{
+      content: '',
+      isListen: false,
+    },
+    created() {
+      recognition.onresult = this.showResult;
+    },
+    methods:{
+      showResult(event) {
+        const last = event.results.length - 1;
+        const res = event.results[last];
+        const text = res[0].transcript;
+        if (res.isFinal) {
+            this.isListen = false;
+            recognition.stop();
+            this.content = text;
+        } else {
+            this.content = `听到了: ${text}`;
+        }
+      },
+      toggleListen() {
+        this.isListen = !this.isListen;
+        if (this.isListen) {
+          recognition.start();
+        } else {
+          recognition.stop();
+        }
+      }
+    }
+});
+</script>
+</body>
+</html>

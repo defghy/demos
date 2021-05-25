@@ -1,0 +1,815 @@
+
+
+[2020-12-14 23:29:54] CLIENT: Marking frame 152 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:29:54] CLIENT: Marking frame 153 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:29:54] CLIENT: Marking frame 154 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:29:54] CLIENT: Marking frame 155 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:29:54] CLIENT: Marking frame 156 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:29:54] CLIENT: Marking frame 157 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:29:54] CLIENT: Marking frame 158 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:29:54] CLIENT: Video rect: 1920x1080 at 0,60
+[2020-12-14 23:29:54] CLIENT: Texture rect: 864x480 at 0,0
+[2020-12-14 23:29:54] CLIENT: Video size: 864x480, output size: 1920x1200, overlay size: 1920x1200
+[2020-12-14 23:29:54] CLIENT: Video rect: 1920x1067 at 0,67
+[2020-12-14 23:29:54] CLIENT: Texture rect: 864x480 at 0,0
+[2020-12-14 23:29:54] CLIENT: Video rect: 1920x1067 at 0,67
+[2020-12-14 23:29:54] CLIENT: Texture rect: 864x480 at 0,0
+[2020-12-14 23:29:54] CLIENT: Marking frame 126 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:54] CLIENT: Marking frame 127 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:54] CLIENT: Marking frame 128 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:54] CLIENT: Marking frame 129 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:54] CLIENT: Marking frame 130 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:54] CLIENT: Marking frame 131 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:54] CLIENT: Marking frame 132 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:54] CLIENT: Marking frame 133 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:54] CLIENT: Marking frame 134 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:54] CLIENT: Marking frame 135 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:54] CLIENT: Marking frame 136 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:54] CLIENT: Marking frame 137 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:54] CLIENT: Marking frame 138 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:54] CLIENT: Marking frame 139 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:54] CLIENT: Marking frame 140 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:54] CLIENT: Marking frame 141 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:54] CLIENT: Marking frame 142 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:54] CLIENT: Marking frame 146 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:54] CLIENT: Marking frame 147 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:54] CLIENT: Marking frame 148 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:54] CLIENT: Marking frame 149 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:54] CLIENT: Marking frame 150 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:54] Setting target framerate: 59.75 [timing: game 10.00, capture 0.04, convert 3.33, encode 2.91, network 1.51, decode 0.91, display 197.05 (display)]
+[2020-12-14 23:29:54] CLIENT: BPutInputFrame(): No input buffer available
+[2020-12-14 23:29:54] CLIENT: Marking frame 178 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:29:54] CLIENT: BPutInputFrame(): No input buffer available
+[2020-12-14 23:29:54] CLIENT: Marking frame 179 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:29:54] CLIENT: BPutInputFrame(): No input buffer available
+[2020-12-14 23:29:54] CLIENT: Marking frame 180 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:29:54] CLIENT: Android texture hardware decoding
+[2020-12-14 23:29:54] CLIENT: Didn't get keyframe, resending lost data notification
+[2020-12-14 23:29:54] CLIENT: Targeting 59.75 FPS
+[2020-12-14 23:29:54] CLIENT: Got control packet k_EStreamControlSetTargetFramerate
+[2020-12-14 23:29:54] CLIENT: Marking frame 186 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:29:54] CLIENT: Marking frame 187 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:29:54] CLIENT: Marking frame 188 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:29:54] CLIENT: Marking frame 189 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:29:54] CLIENT: Marking frame 190 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:29:54] CLIENT: Marking frame 191 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:29:54] CLIENT: Marking frame 192 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:29:54] CLIENT: Marking frame 193 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:29:54] CLIENT: Marking frame 161 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:54] CLIENT: Marking frame 162 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:54] CLIENT: Marking frame 163 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:54] CLIENT: Marking frame 164 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:54] CLIENT: Marking frame 165 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:54] CLIENT: Marking frame 166 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:54] CLIENT: Marking frame 167 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:54] CLIENT: Marking frame 168 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:54] CLIENT: Marking frame 169 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:54] CLIENT: Marking frame 170 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:54] CLIENT: Marking frame 171 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:54] CLIENT: Marking frame 172 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:54] CLIENT: Marking frame 173 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:54] CLIENT: Marking frame 174 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:54] CLIENT: Marking frame 175 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:54] CLIENT: Marking frame 176 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:54] CLIENT: Marking frame 177 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:54] CLIENT: Marking frame 181 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:54] CLIENT: Marking frame 182 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:54] CLIENT: Marking frame 183 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:54] CLIENT: Marking frame 184 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:54] CLIENT: Marking frame 185 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:55] CLIENT: BPutInputFrame(): No input buffer available
+[2020-12-14 23:29:55] CLIENT: Marking frame 212 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:29:55] CLIENT: BPutInputFrame(): No input buffer available
+[2020-12-14 23:29:55] CLIENT: Marking frame 213 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:29:55] CLIENT: BPutInputFrame(): No input buffer available
+[2020-12-14 23:29:55] CLIENT: Marking frame 214 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:29:55] CLIENT: Android texture hardware decoding
+[2020-12-14 23:29:55] CLIENT: Didn't get keyframe, resending lost data notification
+[2020-12-14 23:29:55] CLIENT: Got control packet k_EStreamControlSetCursor
+[2020-12-14 23:29:55] CLIENT: Marking frame 220 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:29:55] CLIENT: Marking frame 221 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:29:55] CLIENT: Marking frame 222 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:29:55] CLIENT: Marking frame 223 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:29:55] CLIENT: Marking frame 224 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:29:55] CLIENT: Marking frame 225 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:29:55] CLIENT: Marking frame 226 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:29:55] CLIENT: Marking frame 227 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:29:55] CLIENT: Marking frame 196 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:55] CLIENT: Marking frame 197 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:55] CLIENT: Marking frame 198 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:55] CLIENT: Marking frame 199 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:55] CLIENT: Marking frame 200 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:55] CLIENT: Marking frame 201 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:55] CLIENT: Marking frame 202 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:55] CLIENT: Marking frame 203 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:55] CLIENT: Marking frame 204 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:55] CLIENT: Marking frame 205 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:55] CLIENT: Marking frame 206 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:55] CLIENT: Marking frame 207 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:55] CLIENT: Marking frame 208 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:55] CLIENT: Marking frame 209 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:55] CLIENT: Marking frame 210 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:55] CLIENT: Marking frame 211 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:55] CLIENT: Marking frame 215 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:55] CLIENT: Marking frame 216 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:55] CLIENT: Marking frame 217 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:55] CLIENT: Marking frame 218 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:55] CLIENT: Marking frame 219 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:55] CLIENT: BPutInputFrame(): No input buffer available
+[2020-12-14 23:29:55] CLIENT: Marking frame 246 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:29:55] CLIENT: BPutInputFrame(): No input buffer available
+[2020-12-14 23:29:55] CLIENT: Marking frame 247 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:29:55] CLIENT: BPutInputFrame(): No input buffer available
+[2020-12-14 23:29:55] CLIENT: Marking frame 248 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:29:55] CLIENT: Android texture hardware decoding
+[2020-12-14 23:29:55] CLIENT: Didn't get keyframe, resending lost data notification
+[2020-12-14 23:29:55] CLIENT: Marking frame 254 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:29:55] CLIENT: Marking frame 255 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:29:55] CLIENT: Marking frame 256 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:29:55] CLIENT: Marking frame 257 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:29:55] CLIENT: Marking frame 258 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:29:55] CLIENT: Marking frame 259 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:29:55] CLIENT: Marking frame 260 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:29:55] CLIENT: Marking frame 261 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:29:55] CLIENT: Marking frame 230 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:55] CLIENT: Marking frame 231 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:55] CLIENT: Marking frame 232 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:55] CLIENT: Marking frame 233 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:55] CLIENT: Marking frame 234 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:55] CLIENT: Marking frame 235 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:55] CLIENT: Marking frame 236 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:55] CLIENT: Marking frame 237 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:55] CLIENT: Marking frame 238 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:55] CLIENT: Marking frame 239 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:55] CLIENT: Marking frame 240 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:55] CLIENT: Marking frame 241 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:55] CLIENT: Marking frame 242 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:55] CLIENT: Marking frame 243 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:56] CLIENT: Marking frame 244 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:56] CLIENT: Marking frame 245 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:56] CLIENT: Marking frame 249 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:56] CLIENT: Marking frame 250 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:56] CLIENT: Marking frame 251 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:56] CLIENT: Marking frame 252 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:56] CLIENT: Marking frame 253 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:56] CLIENT: BPutInputFrame(): No input buffer available
+[2020-12-14 23:29:56] CLIENT: Marking frame 279 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:29:56] CLIENT: BPutInputFrame(): No input buffer available
+[2020-12-14 23:29:56] CLIENT: Marking frame 280 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:29:56] CLIENT: BPutInputFrame(): No input buffer available
+[2020-12-14 23:29:56] CLIENT: Marking frame 281 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:29:56] CLIENT: Android texture hardware decoding
+[2020-12-14 23:29:56] CLIENT: Didn't get keyframe, resending lost data notification
+[2020-12-14 23:29:56] CLIENT: Marking frame 287 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:29:56] CLIENT: Marking frame 288 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:29:56] CLIENT: Marking frame 289 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:29:56] CLIENT: Marking frame 290 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:29:56] CLIENT: Marking frame 291 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:29:56] CLIENT: Marking frame 292 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:29:56] CLIENT: Marking frame 293 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:29:56] CLIENT: Marking frame 294 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:29:56] CLIENT: Marking frame 264 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:56] CLIENT: Marking frame 265 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:56] CLIENT: Marking frame 266 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:56] CLIENT: Marking frame 267 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:56] CLIENT: Marking frame 268 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:56] CLIENT: Marking frame 269 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:56] CLIENT: Marking frame 270 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:56] CLIENT: Marking frame 271 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:56] CLIENT: Marking frame 272 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:56] CLIENT: Marking frame 273 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:56] CLIENT: Marking frame 274 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:56] CLIENT: Marking frame 275 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:56] CLIENT: Marking frame 276 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:56] CLIENT: Marking frame 277 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:56] CLIENT: Marking frame 278 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:56] CLIENT: Marking frame 282 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:56] CLIENT: Marking frame 283 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:56] CLIENT: Marking frame 284 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:56] CLIENT: Marking frame 285 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:56] CLIENT: Marking frame 286 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:57] CLIENT: BPutInputFrame(): No input buffer available
+[2020-12-14 23:29:57] CLIENT: Marking frame 312 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:29:57] CLIENT: BPutInputFrame(): No input buffer available
+[2020-12-14 23:29:57] CLIENT: Marking frame 313 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:29:57] CLIENT: BPutInputFrame(): No input buffer available
+[2020-12-14 23:29:57] CLIENT: Marking frame 314 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:29:57] CLIENT: Android texture hardware decoding
+[2020-12-14 23:29:57] CLIENT: Didn't get keyframe, resending lost data notification
+[2020-12-14 23:29:57] CLIENT: Marking frame 320 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:29:57] CLIENT: Marking frame 321 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:29:57] CLIENT: Marking frame 322 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:29:57] CLIENT: Marking frame 323 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:29:57] CLIENT: Marking frame 324 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:29:57] CLIENT: Marking frame 325 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:29:57] CLIENT: Marking frame 326 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:29:57] CLIENT: Marking frame 327 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:29:57] CLIENT: Marking frame 297 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:57] CLIENT: Marking frame 298 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:57] CLIENT: Marking frame 299 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:57] CLIENT: Marking frame 300 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:57] CLIENT: Marking frame 301 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:57] CLIENT: Marking frame 302 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:57] CLIENT: Marking frame 303 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:57] CLIENT: Marking frame 304 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:57] CLIENT: Marking frame 305 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:57] CLIENT: Marking frame 306 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:57] CLIENT: Marking frame 307 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:57] CLIENT: Marking frame 308 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:57] CLIENT: Marking frame 309 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:57] CLIENT: Marking frame 310 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:57] CLIENT: Marking frame 311 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:57] CLIENT: Marking frame 315 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:57] CLIENT: Marking frame 316 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:57] CLIENT: Marking frame 317 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:57] CLIENT: Marking frame 318 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:57] CLIENT: Marking frame 319 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:57] CLIENT: BPutInputFrame(): No input buffer available
+[2020-12-14 23:29:57] CLIENT: Marking frame 345 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:29:57] CLIENT: BPutInputFrame(): No input buffer available
+[2020-12-14 23:29:57] CLIENT: Marking frame 346 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:29:57] CLIENT: BPutInputFrame(): No input buffer available
+[2020-12-14 23:29:57] CLIENT: Marking frame 347 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:29:57] CLIENT: Android texture hardware decoding
+[2020-12-14 23:29:57] CLIENT: Marking frame 353 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:29:57] CLIENT: Marking frame 354 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:29:57] CLIENT: Marking frame 355 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:29:57] CLIENT: Marking frame 356 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:29:57] CLIENT: Marking frame 357 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:29:57] CLIENT: Marking frame 358 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:29:57] CLIENT: Marking frame 330 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:57] CLIENT: Marking frame 331 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:57] CLIENT: Marking frame 332 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:57] CLIENT: Marking frame 333 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:57] CLIENT: Marking frame 334 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:57] CLIENT: Marking frame 335 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:57] CLIENT: Marking frame 336 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:57] CLIENT: Marking frame 337 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:57] CLIENT: Marking frame 338 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:57] CLIENT: Marking frame 339 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:57] CLIENT: Marking frame 340 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:57] CLIENT: Marking frame 341 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:57] CLIENT: Marking frame 342 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:57] CLIENT: Marking frame 343 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:57] CLIENT: Marking frame 344 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:57] CLIENT: Marking frame 348 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:57] CLIENT: Marking frame 349 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:57] CLIENT: Marking frame 350 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:57] CLIENT: Marking frame 351 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:57] CLIENT: Marking frame 352 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:58] CLIENT: BPutInputFrame(): No input buffer available
+[2020-12-14 23:29:58] CLIENT: Marking frame 376 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:29:58] CLIENT: BPutInputFrame(): No input buffer available
+[2020-12-14 23:29:58] CLIENT: Marking frame 377 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:29:58] CLIENT: BPutInputFrame(): No input buffer available
+[2020-12-14 23:29:58] CLIENT: Marking frame 378 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:29:58] CLIENT: Android texture hardware decoding
+[2020-12-14 23:29:58] CLIENT: Didn't get keyframe, resending lost data notification
+[2020-12-14 23:29:58] CLIENT: Marking frame 383 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:29:58] CLIENT: Marking frame 384 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:29:58] CLIENT: Marking frame 385 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:29:58] CLIENT: Marking frame 386 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:29:58] CLIENT: Marking frame 387 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:29:58] CLIENT: Marking frame 388 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:29:58] CLIENT: Marking frame 389 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:29:58] CLIENT: Marking frame 390 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:29:58] CLIENT: Marking frame 391 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:29:58] CLIENT: Video size: 864x480, output size: 1920x1200, overlay size: 1920x1200
+[2020-12-14 23:29:58] CLIENT: Video rect: 1920x1067 at 0,67
+[2020-12-14 23:29:58] CLIENT: Texture rect: 864x480 at 0,0
+[2020-12-14 23:29:58] CLIENT: Video rect: 1920x1067 at 0,67
+[2020-12-14 23:29:58] CLIENT: Texture rect: 864x480 at 0,0
+[2020-12-14 23:29:58] CLIENT: Marking frame 361 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:58] CLIENT: Marking frame 362 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:58] CLIENT: Marking frame 363 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:58] CLIENT: Marking frame 364 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:58] CLIENT: Marking frame 365 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:58] CLIENT: Marking frame 366 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:58] CLIENT: Marking frame 367 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:58] CLIENT: Marking frame 368 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:58] CLIENT: Marking frame 369 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:58] CLIENT: Marking frame 370 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:58] CLIENT: Marking frame 371 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:58] CLIENT: Marking frame 372 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:58] CLIENT: Marking frame 373 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:58] CLIENT: Marking frame 374 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:58] CLIENT: Marking frame 375 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:58] CLIENT: Marking frame 379 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:58] CLIENT: Marking frame 380 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:58] CLIENT: Marking frame 381 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:58] CLIENT: Marking frame 382 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:29:58] CLIENT: Marking frame 392 complete with status k_EStreamFrameResultDroppedLate
+[2020-12-14 23:29:58] CLIENT: Marking frame 393 complete with status k_EStreamFrameResultDroppedLate
+[2020-12-14 23:29:58] CLIENT: Marking frame 394 complete with status k_EStreamFrameResultDroppedLate
+[2020-12-14 23:29:58] CLIENT: Marking frame 395 complete with status k_EStreamFrameResultDroppedLate
+[2020-12-14 23:29:58] CLIENT: Marking frame 396 complete with status k_EStreamFrameResultDroppedLate
+[2020-12-14 23:29:58] CLIENT: Marking frame 397 complete with status k_EStreamFrameResultDroppedLate
+[2020-12-14 23:29:58] CLIENT: Marking frame 398 complete with status k_EStreamFrameResultDroppedLate
+[2020-12-14 23:29:58] CLIENT: Marking frame 399 complete with status k_EStreamFrameResultDroppedLate
+[2020-12-14 23:29:58] CLIENT: Marking frame 400 complete with status k_EStreamFrameResultDroppedLate
+[2020-12-14 23:29:58] CLIENT: Marking frame 401 complete with status k_EStreamFrameResultDroppedLate
+[2020-12-14 23:29:58] CLIENT: Marking frame 402 complete with status k_EStreamFrameResultDroppedLate
+[2020-12-14 23:29:58] CLIENT: Marking frame 403 complete with status k_EStreamFrameResultDroppedLate
+[2020-12-14 23:29:58] CLIENT: Marking frame 404 complete with status k_EStreamFrameResultDroppedLate
+[2020-12-14 23:29:58] CLIENT: Marking frame 405 complete with status k_EStreamFrameResultDroppedLate
+[2020-12-14 23:29:58] CLIENT: Marking frame 406 complete with status k_EStreamFrameResultDroppedLate
+[2020-12-14 23:29:58] CLIENT: Marking frame 407 complete with status k_EStreamFrameResultDroppedLate
+[2020-12-14 23:29:58] CLIENT: Marking frame 408 complete with status k_EStreamFrameResultDroppedLate
+[2020-12-14 23:29:58] CLIENT: Marking frame 409 complete with status k_EStreamFrameResultDroppedLate
+[2020-12-14 23:29:58] CLIENT: Marking frame 410 complete with status k_EStreamFrameResultDroppedLate
+[2020-12-14 23:29:58] CLIENT: Marking frame 411 complete with status k_EStreamFrameResultDroppedLate
+[2020-12-14 23:29:58] CLIENT: Marking frame 412 complete with status k_EStreamFrameResultDroppedLate
+[2020-12-14 23:29:58] CLIENT: Marking frame 413 complete with status k_EStreamFrameResultDroppedLate
+[2020-12-14 23:29:58] CLIENT: Marking frame 414 complete with status k_EStreamFrameResultDroppedLate
+[2020-12-14 23:29:58] CLIENT: Marking frame 415 complete with status k_EStreamFrameResultDroppedLate
+[2020-12-14 23:29:58] CLIENT: Marking frame 416 complete with status k_EStreamFrameResultDroppedLate
+[2020-12-14 23:29:58] CLIENT: Marking frame 417 complete with status k_EStreamFrameResultDroppedLate
+[2020-12-14 23:29:58] CLIENT: Marking frame 418 complete with status k_EStreamFrameResultDroppedLate
+[2020-12-14 23:30:19] CLIENT: Sending HID device 1949/0402/-1  PG-9167 at sdl://0
+[2020-12-14 23:30:19] Streaming started to HUAWEI VRD-W09 Android 10 at 192.168.199.144:60147, audio channels = 2, MTU = 1468
+[2020-12-14 23:30:19] Streaming quality: k_EStreamQualityBeautiful
+[2020-12-14 23:30:19] Streaming bitrate: Automatic
+[2020-12-14 23:30:19] Device form factor: tablet
+[2020-12-14 23:30:19] Maximum capture: 1920x1200 59.75 FPS
+[2020-12-14 23:30:19] Video Streaming: enabled
+[2020-12-14 23:30:19] Audio Streaming: enabled
+[2020-12-14 23:30:19] Input Streaming: enabled
+[2020-12-14 23:30:19] =====================================================================
+[2020-12-14 23:30:19] Game: UNKNOWN (0)
+[2020-12-14 23:30:19] Setting target bitrate to 15000 Kbit/s, burst bitrate is 75000 Kbit/s
+[2020-12-14 23:30:19] Recording system audio
+[2020-12-14 23:30:19] CDesktopCaptureDWM: Reinitializing D3D for adapter 0x168e4
+[2020-12-14 23:30:19] Video adapter: AMD Radeon RX 6800, vendor ID: 0x1002, device ID: 0x73bf
+[2020-12-14 23:30:19] CLIENT: Got control packet k_EStreamControlSetQoS
+[2020-12-14 23:30:19] CLIENT: Got control packet k_EStreamControlSetTargetBitrate
+[2020-12-14 23:30:19] Recording on device: Realtek Digital Output (11- Realtek High Definition Audio)
+[2020-12-14 23:30:19] Audio client mix format:
+[2020-12-14 23:30:19] 	format: 65534
+[2020-12-14 23:30:19] 	channels: 2
+[2020-12-14 23:30:19] 	samples/sec: 48000
+[2020-12-14 23:30:19] 	bytes/sec: 384000
+[2020-12-14 23:30:19] 	alignment: 8
+[2020-12-14 23:30:19] 	bits/sample: 32
+[2020-12-14 23:30:19] 	channel mask: 0x3
+[2020-12-14 23:30:19] 	data format: {00000003-0000-0010-8000-00AA00389B71}
+[2020-12-14 23:30:19] Initializing audio with 2 channels and 48000 samples/sec
+[2020-12-14 23:30:19] CDesktopCaptureDWM: desktop duplication enabled
+[2020-12-14 23:30:19] CLIENT: Starting audio stream: frequency=48000, channels=2
+[2020-12-14 23:30:19] CLIENT: Opened audio device: format=2, channels=2, frequency=48000
+[2020-12-14 23:30:19] CLIENT: Initialized audio decoder: codec=3, sample rate=48000, channels=2
+[2020-12-14 23:30:19] CLIENT: Got control packet k_EStreamControlStartAudioData
+[2020-12-14 23:30:19] CLIENT: Got control packet k_EStreamControlSetSpectatorMode
+[2020-12-14 23:30:19] CLIENT: Got control packet k_EStreamControlSetCaptureSize
+[2020-12-14 23:30:19] CLIENT: Got control packet k_EStreamControlSetTitle
+[2020-12-14 23:30:19] CLIENT: Got control packet k_EStreamControlSetIcon
+[2020-12-14 23:30:19] CLIENT: Got control packet k_EStreamControlSetCursor
+[2020-12-14 23:30:19] CLIENT: Got control packet k_EStreamControlSetKeymap
+[2020-12-14 23:30:19] CLIENT: Got control packet k_EStreamControlSetActivity
+[2020-12-14 23:30:20] Audio mix: start=978856169, returned=0
+[2020-12-14 23:30:20] Audio source [System Windows]: init=0, through=0, last_start=0, mixed=0, drop_before=0, drop_after=0
+[2020-12-14 23:30:20] >>> Switching video stream from NONE to Desktop_MovieStream
+[2020-12-14 23:30:20] >>> Capture method set to Desktop DWM NV12 + AMF H264
+[2020-12-14 23:30:20] >>> Capture resolution set to 1280x720
+[2020-12-14 23:30:20] >>> Client video decoder set to Android texture hardware decoding
+[2020-12-14 23:30:20] CLIENT: Android texture hardware decoding
+[2020-12-14 23:30:20] CLIENT: Got control packet k_EStreamControlStartVideoData
+[2020-12-14 23:30:20] CLIENT: Got control packet k_EStreamControlVideoEncoderInfo
+[2020-12-14 23:30:20] CLIENT: Marking frame 0 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:30:20] CLIENT: Marking frame 1 complete with status k_EStreamFrameResultDroppedLate
+[2020-12-14 23:30:20] CLIENT: Marking frame 2 complete with status k_EStreamFrameResultDroppedLate
+[2020-12-14 23:30:21] Setting target framerate: 59.75 [timing: game 10.00, capture 0.19, convert 13.21, encode 4.82, network 35.29, decode 0.78, display 3804269.75 (network) (display)]
+[2020-12-14 23:30:21] CLIENT: Marking frame 4 complete with status k_EStreamFrameResultDroppedLate
+[2020-12-14 23:30:21] CLIENT: Marking frame 5 complete with status k_EStreamFrameResultDroppedLate
+[2020-12-14 23:30:21] CLIENT: Marking frame 6 complete with status k_EStreamFrameResultDroppedLate
+[2020-12-14 23:30:21] CLIENT: Marking frame 7 complete with status k_EStreamFrameResultDroppedLate
+[2020-12-14 23:30:21] CLIENT: Video rect: 1920x1200 at 0,0
+[2020-12-14 23:30:21] CLIENT: Texture rect: 1920x1080 at 0,0
+[2020-12-14 23:30:21] CLIENT: Video size: 1920x1080, output size: 1920x1200, overlay size: 1920x1200
+[2020-12-14 23:30:21] CLIENT: Video rect: 1920x1080 at 0,60
+[2020-12-14 23:30:21] CLIENT: Texture rect: 1920x1080 at 0,0
+[2020-12-14 23:30:21] CLIENT: Video rect: 1920x1080 at 0,60
+[2020-12-14 23:30:21] CLIENT: Texture rect: 1920x1080 at 0,0
+[2020-12-14 23:30:21] CLIENT: BPutInputFrame(): No input buffer available
+[2020-12-14 23:30:21] CLIENT: Marking frame 22 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:30:21] CLIENT: BPutInputFrame(): No input buffer available
+[2020-12-14 23:30:21] CLIENT: Marking frame 23 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:30:21] CLIENT: BPutInputFrame(): No input buffer available
+[2020-12-14 23:30:21] CLIENT: Marking frame 40 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:30:21] CLIENT: BPutInputFrame(): No input buffer available
+[2020-12-14 23:30:21] CLIENT: Marking frame 41 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:30:21] CLIENT: BPutInputFrame(): No input buffer available
+[2020-12-14 23:30:21] CLIENT: Marking frame 42 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:30:21] CLIENT: Android texture hardware decoding
+[2020-12-14 23:30:21] CLIENT: Didn't get keyframe, resending lost data notification
+[2020-12-14 23:30:21] CLIENT: Targeting 59.75 FPS
+[2020-12-14 23:30:21] CLIENT: Got control packet k_EStreamControlSetTargetFramerate
+[2020-12-14 23:30:21] CLIENT: Marking frame 50 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:30:21] CLIENT: Marking frame 51 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:30:21] CLIENT: Marking frame 52 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:30:21] CLIENT: Marking frame 53 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:30:21] CLIENT: Marking frame 54 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:30:21] CLIENT: Marking frame 55 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:30:21] CLIENT: Marking frame 56 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:30:21] CLIENT: Marking frame 57 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:30:21] CLIENT: Video rect: 1920x1080 at 0,60
+[2020-12-14 23:30:21] CLIENT: Texture rect: 1280x720 at 0,0
+[2020-12-14 23:30:21] CLIENT: Video size: 1280x720, output size: 1920x1200, overlay size: 1920x1200
+[2020-12-14 23:30:21] CLIENT: Video rect: 1920x1080 at 0,60
+[2020-12-14 23:30:21] CLIENT: Texture rect: 1280x720 at 0,0
+[2020-12-14 23:30:21] CLIENT: Video rect: 1920x1080 at 0,60
+[2020-12-14 23:30:21] CLIENT: Texture rect: 1280x720 at 0,0
+[2020-12-14 23:30:21] CLIENT: Marking frame 9 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:21] CLIENT: Marking frame 10 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:21] CLIENT: Marking frame 11 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:21] CLIENT: Marking frame 12 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:21] CLIENT: Marking frame 13 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:21] CLIENT: Marking frame 14 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:21] CLIENT: Marking frame 15 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:21] CLIENT: Marking frame 16 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:21] CLIENT: Marking frame 17 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:21] CLIENT: Marking frame 18 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:21] CLIENT: Marking frame 19 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:21] CLIENT: Marking frame 20 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:21] CLIENT: Marking frame 21 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:21] CLIENT: Marking frame 24 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:21] CLIENT: Marking frame 25 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:21] CLIENT: Marking frame 26 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:21] CLIENT: Marking frame 27 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:21] CLIENT: Marking frame 28 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:21] CLIENT: Marking frame 29 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:21] CLIENT: Marking frame 30 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:21] CLIENT: Marking frame 31 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:21] CLIENT: Marking frame 32 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:21] CLIENT: Marking frame 33 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:21] CLIENT: Marking frame 34 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:21] CLIENT: Marking frame 35 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:21] CLIENT: Marking frame 36 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:21] CLIENT: Marking frame 37 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:21] CLIENT: Marking frame 38 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:21] CLIENT: Marking frame 39 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:21] CLIENT: Marking frame 43 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:21] CLIENT: Marking frame 44 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:21] CLIENT: Marking frame 45 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:21] CLIENT: Marking frame 46 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:21] CLIENT: Marking frame 47 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:21] CLIENT: Marking frame 48 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:21] CLIENT: Marking frame 49 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:21] CLIENT: BPutInputFrame(): No input buffer available
+[2020-12-14 23:30:21] CLIENT: Marking frame 75 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:30:21] CLIENT: BPutInputFrame(): No input buffer available
+[2020-12-14 23:30:21] CLIENT: Marking frame 76 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:30:21] CLIENT: BPutInputFrame(): No input buffer available
+[2020-12-14 23:30:21] CLIENT: Marking frame 77 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:30:21] CLIENT: Android texture hardware decoding
+[2020-12-14 23:30:21] CLIENT: Didn't get keyframe, resending lost data notification
+[2020-12-14 23:30:21] CLIENT: Marking frame 85 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:30:21] CLIENT: Marking frame 86 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:30:21] CLIENT: Marking frame 87 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:30:21] CLIENT: Marking frame 88 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:30:21] CLIENT: Marking frame 89 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:30:21] CLIENT: Marking frame 90 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:30:21] CLIENT: Marking frame 91 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:30:21] CLIENT: Marking frame 92 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:30:21] CLIENT: Marking frame 60 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:21] CLIENT: Marking frame 61 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:21] CLIENT: Marking frame 62 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:21] CLIENT: Marking frame 63 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:21] CLIENT: Marking frame 64 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:21] CLIENT: Marking frame 65 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:21] CLIENT: Marking frame 66 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:21] CLIENT: Marking frame 67 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:21] CLIENT: Marking frame 68 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:21] CLIENT: Marking frame 69 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:21] CLIENT: Marking frame 70 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:21] CLIENT: Marking frame 71 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:21] CLIENT: Marking frame 72 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:21] CLIENT: Marking frame 73 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:21] CLIENT: Marking frame 74 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:21] CLIENT: Marking frame 78 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:21] CLIENT: Marking frame 79 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:21] CLIENT: Marking frame 80 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:21] CLIENT: Marking frame 81 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:21] CLIENT: Marking frame 82 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:21] CLIENT: Marking frame 83 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:21] CLIENT: Marking frame 84 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:22] Setting target framerate: 59.75 [timing: game 10.00, capture 0.06, convert 5.68, encode 4.21, network 2.10, decode 0.82, display 211.02 (display)]
+[2020-12-14 23:30:22] CLIENT: BPutInputFrame(): No input buffer available
+[2020-12-14 23:30:22] CLIENT: Marking frame 112 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:30:22] CLIENT: BPutInputFrame(): No input buffer available
+[2020-12-14 23:30:22] CLIENT: Marking frame 113 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:30:22] CLIENT: BPutInputFrame(): No input buffer available
+[2020-12-14 23:30:22] CLIENT: Marking frame 114 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:30:22] CLIENT: BPutInputFrame(): No input buffer available
+[2020-12-14 23:30:22] CLIENT: Marking frame 115 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:30:22] CLIENT: Android texture hardware decoding
+[2020-12-14 23:30:22] CLIENT: Didn't get keyframe, resending lost data notification
+[2020-12-14 23:30:22] CLIENT: Targeting 59.75 FPS
+[2020-12-14 23:30:22] CLIENT: Got control packet k_EStreamControlSetTargetFramerate
+[2020-12-14 23:30:22] CLIENT: Marking frame 122 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:30:22] CLIENT: Marking frame 123 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:30:22] CLIENT: Marking frame 124 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:30:22] CLIENT: Marking frame 125 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:30:22] CLIENT: Marking frame 126 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:30:22] CLIENT: Marking frame 127 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:30:22] CLIENT: Marking frame 128 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:30:22] CLIENT: Marking frame 129 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:30:22] CLIENT: Marking frame 130 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:30:22] CLIENT: Marking frame 95 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:22] CLIENT: Marking frame 96 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:22] CLIENT: Marking frame 97 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:22] CLIENT: Marking frame 98 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:22] CLIENT: Marking frame 99 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:22] CLIENT: Marking frame 100 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:22] CLIENT: Marking frame 101 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:22] CLIENT: Marking frame 102 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:22] CLIENT: Marking frame 103 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:22] CLIENT: Marking frame 104 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:22] CLIENT: Marking frame 105 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:22] CLIENT: Marking frame 106 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:22] CLIENT: Marking frame 107 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:22] CLIENT: Marking frame 108 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:22] CLIENT: Marking frame 109 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:22] CLIENT: Marking frame 110 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:22] CLIENT: Marking frame 111 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:22] CLIENT: Marking frame 116 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:22] CLIENT: Marking frame 117 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:22] CLIENT: Marking frame 118 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:22] CLIENT: Marking frame 119 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:22] CLIENT: Marking frame 120 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:22] CLIENT: Marking frame 121 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:22] CLIENT: BPutInputFrame(): No input buffer available
+[2020-12-14 23:30:22] CLIENT: Marking frame 150 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:30:22] CLIENT: BPutInputFrame(): No input buffer available
+[2020-12-14 23:30:22] CLIENT: Marking frame 151 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:30:22] CLIENT: BPutInputFrame(): No input buffer available
+[2020-12-14 23:30:22] CLIENT: Marking frame 152 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:30:22] CLIENT: Android texture hardware decoding
+[2020-12-14 23:30:22] CLIENT: Didn't get keyframe, resending lost data notification
+[2020-12-14 23:30:23] CLIENT: Marking frame 159 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:30:23] CLIENT: Marking frame 160 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:30:23] CLIENT: Marking frame 161 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:30:23] CLIENT: Marking frame 162 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:30:23] CLIENT: Marking frame 163 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:30:23] CLIENT: Marking frame 164 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:30:23] CLIENT: Marking frame 165 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:30:23] CLIENT: Marking frame 166 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:30:23] CLIENT: Marking frame 167 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:30:23] CLIENT: Marking frame 133 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:23] CLIENT: Marking frame 134 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:23] CLIENT: Marking frame 135 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:23] CLIENT: Marking frame 136 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:23] CLIENT: Marking frame 137 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:23] CLIENT: Marking frame 138 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:23] CLIENT: Marking frame 139 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:23] CLIENT: Marking frame 140 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:23] CLIENT: Marking frame 141 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:23] CLIENT: Marking frame 142 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:23] CLIENT: Marking frame 143 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:23] CLIENT: Marking frame 144 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:23] CLIENT: Marking frame 145 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:23] CLIENT: Marking frame 146 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:23] CLIENT: Marking frame 147 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:23] CLIENT: Marking frame 148 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:23] CLIENT: Marking frame 149 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:23] CLIENT: Marking frame 153 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:23] CLIENT: Marking frame 154 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:23] CLIENT: Marking frame 155 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:23] CLIENT: Marking frame 156 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:23] CLIENT: Marking frame 157 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:23] CLIENT: Marking frame 158 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:23] CLIENT: BPutInputFrame(): No input buffer available
+[2020-12-14 23:30:23] CLIENT: Marking frame 186 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:30:23] CLIENT: BPutInputFrame(): No input buffer available
+[2020-12-14 23:30:23] CLIENT: Marking frame 187 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:30:23] CLIENT: BPutInputFrame(): No input buffer available
+[2020-12-14 23:30:23] CLIENT: Marking frame 188 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:30:23] CLIENT: Android texture hardware decoding
+[2020-12-14 23:30:23] CLIENT: Didn't get keyframe, resending lost data notification
+[2020-12-14 23:30:23] CLIENT: Marking frame 194 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:30:23] CLIENT: Marking frame 195 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:30:23] CLIENT: Marking frame 196 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:30:23] CLIENT: Marking frame 197 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:30:23] CLIENT: Marking frame 198 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:30:23] CLIENT: Marking frame 199 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:30:23] CLIENT: Marking frame 200 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:30:23] CLIENT: Marking frame 170 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:23] CLIENT: Marking frame 171 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:23] CLIENT: Marking frame 172 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:23] CLIENT: Marking frame 173 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:23] CLIENT: Marking frame 174 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:23] CLIENT: Marking frame 175 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:23] CLIENT: Marking frame 176 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:23] CLIENT: Marking frame 177 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:23] CLIENT: Marking frame 178 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:23] CLIENT: Marking frame 179 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:23] CLIENT: Marking frame 180 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:23] CLIENT: Marking frame 181 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:23] CLIENT: Marking frame 182 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:23] CLIENT: Marking frame 183 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:23] CLIENT: Marking frame 184 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:23] CLIENT: Marking frame 185 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:23] CLIENT: Marking frame 189 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:23] CLIENT: Marking frame 190 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:23] CLIENT: Marking frame 191 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:23] CLIENT: Marking frame 192 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:23] CLIENT: Marking frame 193 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:24] CLIENT: BPutInputFrame(): No input buffer available
+[2020-12-14 23:30:24] CLIENT: Marking frame 219 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:30:24] CLIENT: BPutInputFrame(): No input buffer available
+[2020-12-14 23:30:24] CLIENT: Marking frame 220 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:30:24] CLIENT: BPutInputFrame(): No input buffer available
+[2020-12-14 23:30:24] CLIENT: Marking frame 237 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:30:24] CLIENT: BPutInputFrame(): No input buffer available
+[2020-12-14 23:30:24] CLIENT: Marking frame 238 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:30:24] CLIENT: BPutInputFrame(): No input buffer available
+[2020-12-14 23:30:24] CLIENT: Marking frame 239 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:30:24] CLIENT: Android texture hardware decoding
+[2020-12-14 23:30:24] CLIENT: Didn't get keyframe, resending lost data notification
+[2020-12-14 23:30:24] CLIENT: Got control packet k_EStreamControlSetCursor
+[2020-12-14 23:30:25] CLIENT: Marking frame 246 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:30:25] CLIENT: Marking frame 247 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:30:25] CLIENT: Marking frame 248 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:30:25] CLIENT: Marking frame 249 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:30:25] CLIENT: Marking frame 250 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:30:25] CLIENT: Marking frame 251 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:30:25] CLIENT: Marking frame 252 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:30:25] CLIENT: Marking frame 253 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:30:25] CLIENT: Video size: 1280x720, output size: 1920x1200, overlay size: 1920x1200
+[2020-12-14 23:30:25] CLIENT: Video rect: 1920x1080 at 0,60
+[2020-12-14 23:30:25] CLIENT: Texture rect: 1280x720 at 0,0
+[2020-12-14 23:30:25] CLIENT: Video rect: 1920x1080 at 0,60
+[2020-12-14 23:30:25] CLIENT: Texture rect: 1280x720 at 0,0
+[2020-12-14 23:30:25] CLIENT: Marking frame 203 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:25] CLIENT: Marking frame 204 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:25] CLIENT: Marking frame 205 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:25] CLIENT: Marking frame 206 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:25] CLIENT: Marking frame 207 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:25] CLIENT: Marking frame 208 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:25] CLIENT: Marking frame 209 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:25] CLIENT: Marking frame 210 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:25] CLIENT: Marking frame 211 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:25] CLIENT: Marking frame 212 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:25] CLIENT: Marking frame 213 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:25] CLIENT: Marking frame 214 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:25] CLIENT: Marking frame 215 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:25] CLIENT: Marking frame 216 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:25] CLIENT: Marking frame 217 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:25] CLIENT: Marking frame 218 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:25] CLIENT: Marking frame 221 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:25] CLIENT: Marking frame 222 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:25] CLIENT: Marking frame 223 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:25] CLIENT: Marking frame 224 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:25] CLIENT: Marking frame 225 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:25] CLIENT: Marking frame 226 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:25] CLIENT: Marking frame 227 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:25] CLIENT: Marking frame 228 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:25] CLIENT: Marking frame 229 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:25] CLIENT: Marking frame 230 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:25] CLIENT: Marking frame 231 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:25] CLIENT: Marking frame 232 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:25] CLIENT: Marking frame 233 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:25] CLIENT: Marking frame 234 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:25] CLIENT: Marking frame 235 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:25] CLIENT: Marking frame 236 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:25] CLIENT: Marking frame 240 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:25] CLIENT: Marking frame 241 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:25] CLIENT: Marking frame 242 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:25] CLIENT: Marking frame 243 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:25] CLIENT: Marking frame 244 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:25] CLIENT: Marking frame 245 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:25] CLIENT: Marking frame 254 complete with status k_EStreamFrameResultDroppedLate
+[2020-12-14 23:30:25] CLIENT: Marking frame 255 complete with status k_EStreamFrameResultDroppedLate
+[2020-12-14 23:30:25] CLIENT: Marking frame 256 complete with status k_EStreamFrameResultDroppedLate
+[2020-12-14 23:30:25] CLIENT: Marking frame 257 complete with status k_EStreamFrameResultDroppedLate
+[2020-12-14 23:30:25] CLIENT: Marking frame 258 complete with status k_EStreamFrameResultDroppedLate
+[2020-12-14 23:30:25] CLIENT: Marking frame 259 complete with status k_EStreamFrameResultDroppedLate
+[2020-12-14 23:30:25] CLIENT: Marking frame 260 complete with status k_EStreamFrameResultDroppedLate
+[2020-12-14 23:30:25] CLIENT: Marking frame 261 complete with status k_EStreamFrameResultDroppedLate
+[2020-12-14 23:30:25] CLIENT: Marking frame 262 complete with status k_EStreamFrameResultDroppedLate
+[2020-12-14 23:30:25] CLIENT: Marking frame 263 complete with status k_EStreamFrameResultDroppedLate
+[2020-12-14 23:30:25] CLIENT: Marking frame 264 complete with status k_EStreamFrameResultDroppedLate
+[2020-12-14 23:30:25] CLIENT: Marking frame 265 complete with status k_EStreamFrameResultDroppedLate
+[2020-12-14 23:30:25] CLIENT: Marking frame 266 complete with status k_EStreamFrameResultDroppedLate
+[2020-12-14 23:30:25] CLIENT: Marking frame 267 complete with status k_EStreamFrameResultDroppedLate
+[2020-12-14 23:30:25] CLIENT: Marking frame 268 complete with status k_EStreamFrameResultDroppedLate
+[2020-12-14 23:30:25] CLIENT: Marking frame 269 complete with status k_EStreamFrameResultDroppedLate
+[2020-12-14 23:30:25] CLIENT: Marking frame 270 complete with status k_EStreamFrameResultDroppedLate
+[2020-12-14 23:30:25] CLIENT: Marking frame 271 complete with status k_EStreamFrameResultDroppedLate
+[2020-12-14 23:30:25] CLIENT: Marking frame 272 complete with status k_EStreamFrameResultDroppedLate
+[2020-12-14 23:30:25] CLIENT: Marking frame 273 complete with status k_EStreamFrameResultDroppedLate
+[2020-12-14 23:30:25] CLIENT: Marking frame 274 complete with status k_EStreamFrameResultDroppedLate
+[2020-12-14 23:30:25] CLIENT: Marking frame 275 complete with status k_EStreamFrameResultDroppedLate
+[2020-12-14 23:30:25] CLIENT: Marking frame 276 complete with status k_EStreamFrameResultDroppedLate
+[2020-12-14 23:30:25] CLIENT: Marking frame 277 complete with status k_EStreamFrameResultDroppedLate
+[2020-12-14 23:30:25] CLIENT: Marking frame 278 complete with status k_EStreamFrameResultDroppedLate
+[2020-12-14 23:30:25] CLIENT: Marking frame 279 complete with status k_EStreamFrameResultDroppedLate
+[2020-12-14 23:30:25] CLIENT: Marking frame 280 complete with status k_EStreamFrameResultDroppedLate
+[2020-12-14 23:30:41] CLIENT: Sending HID device 1949/0402/-1  PG-9167 at sdl://0
+[2020-12-14 23:30:41] Streaming started to HUAWEI VRD-W09 Android 10 at 192.168.199.144:35231, audio channels = 2, MTU = 1468
+[2020-12-14 23:30:41] Streaming quality: k_EStreamQualityFast
+[2020-12-14 23:30:41] Streaming bitrate: Automatic
+[2020-12-14 23:30:41] Device form factor: tablet
+[2020-12-14 23:30:41] Maximum capture: 1920x1200 59.75 FPS
+[2020-12-14 23:30:41] Video Streaming: enabled
+[2020-12-14 23:30:41] Audio Streaming: enabled
+[2020-12-14 23:30:41] Input Streaming: enabled
+[2020-12-14 23:30:41] =====================================================================
+[2020-12-14 23:30:41] Game: UNKNOWN (0)
+[2020-12-14 23:30:41] Setting target bitrate to 15000 Kbit/s, burst bitrate is 75000 Kbit/s
+[2020-12-14 23:30:41] Recording system audio
+[2020-12-14 23:30:41] CDesktopCaptureDWM: Reinitializing D3D for adapter 0x168e4
+[2020-12-14 23:30:41] Video adapter: AMD Radeon RX 6800, vendor ID: 0x1002, device ID: 0x73bf
+[2020-12-14 23:30:41] Recording on device: Realtek Digital Output (11- Realtek High Definition Audio)
+[2020-12-14 23:30:41] Audio client mix format:
+[2020-12-14 23:30:41] 	format: 65534
+[2020-12-14 23:30:41] 	channels: 2
+[2020-12-14 23:30:41] 	samples/sec: 48000
+[2020-12-14 23:30:41] 	bytes/sec: 384000
+[2020-12-14 23:30:41] 	alignment: 8
+[2020-12-14 23:30:41] 	bits/sample: 32
+[2020-12-14 23:30:41] 	channel mask: 0x3
+[2020-12-14 23:30:41] 	data format: {00000003-0000-0010-8000-00AA00389B71}
+[2020-12-14 23:30:41] Initializing audio with 2 channels and 48000 samples/sec
+[2020-12-14 23:30:41] CDesktopCaptureDWM: desktop duplication enabled
+[2020-12-14 23:30:41] CLIENT: Got control packet k_EStreamControlSetQoS
+[2020-12-14 23:30:41] CLIENT: Got control packet k_EStreamControlSetTargetBitrate
+[2020-12-14 23:30:41] CLIENT: Starting audio stream: frequency=48000, channels=2
+[2020-12-14 23:30:41] CLIENT: Opened audio device: format=2, channels=2, frequency=48000
+[2020-12-14 23:30:41] CLIENT: Initialized audio decoder: codec=3, sample rate=48000, channels=2
+[2020-12-14 23:30:41] CLIENT: Got control packet k_EStreamControlStartAudioData
+[2020-12-14 23:30:41] CLIENT: Got control packet k_EStreamControlSetSpectatorMode
+[2020-12-14 23:30:41] CLIENT: Got control packet k_EStreamControlSetCaptureSize
+[2020-12-14 23:30:41] CLIENT: Got control packet k_EStreamControlSetTitle
+[2020-12-14 23:30:41] CLIENT: Got control packet k_EStreamControlSetIcon
+[2020-12-14 23:30:41] CLIENT: Got control packet k_EStreamControlSetCursor
+[2020-12-14 23:30:41] CLIENT: Got control packet k_EStreamControlSetKeymap
+[2020-12-14 23:30:41] CLIENT: Got control packet k_EStreamControlSetActivity
+[2020-12-14 23:30:41] Audio mix: start=1000071329, returned=0
+[2020-12-14 23:30:41] Audio source [System Windows]: init=0, through=0, last_start=0, mixed=0, drop_before=0, drop_after=0
+[2020-12-14 23:30:41] >>> Switching video stream from NONE to Desktop_MovieStream
+[2020-12-14 23:30:41] >>> Capture method set to Desktop DWM NV12 + AMF H264
+[2020-12-14 23:30:41] >>> Capture resolution set to 1280x720
+[2020-12-14 23:30:41] >>> Client video decoder set to Android texture hardware decoding
+[2020-12-14 23:30:41] CLIENT: Android texture hardware decoding
+[2020-12-14 23:30:41] CLIENT: Got control packet k_EStreamControlStartVideoData
+[2020-12-14 23:30:41] CLIENT: Got control packet k_EStreamControlVideoEncoderInfo
+[2020-12-14 23:30:41] CLIENT: Marking frame 0 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:30:41] CLIENT: Marking frame 1 complete with status k_EStreamFrameResultDroppedLate
+[2020-12-14 23:30:41] CLIENT: Video rect: 1920x1200 at 0,0
+[2020-12-14 23:30:41] CLIENT: Texture rect: 1920x1080 at 0,0
+[2020-12-14 23:30:41] CLIENT: Video size: 1920x1080, output size: 1920x1200, overlay size: 1920x1200
+[2020-12-14 23:30:41] CLIENT: Video rect: 1920x1080 at 0,60
+[2020-12-14 23:30:41] CLIENT: Texture rect: 1920x1080 at 0,0
+[2020-12-14 23:30:41] CLIENT: Video rect: 1920x1080 at 0,60
+[2020-12-14 23:30:41] CLIENT: Texture rect: 1920x1080 at 0,0
+[2020-12-14 23:30:41] CLIENT: BPutInputFrame(): No input buffer available
+[2020-12-14 23:30:41] CLIENT: Marking frame 18 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:30:41] CLIENT: BPutInputFrame(): No input buffer available
+[2020-12-14 23:30:41] CLIENT: Marking frame 19 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:30:41] CLIENT: BPutInputFrame(): No input buffer available
+[2020-12-14 23:30:41] CLIENT: Marking frame 20 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:30:41] CLIENT: Android texture hardware decoding
+[2020-12-14 23:30:41] CLIENT: Didn't get keyframe, resending lost data notification
+[2020-12-14 23:30:41] CLIENT: Marking frame 27 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:30:41] CLIENT: Marking frame 28 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:30:41] CLIENT: Marking frame 29 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:30:41] CLIENT: Marking frame 30 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:30:41] CLIENT: Marking frame 31 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:30:41] CLIENT: Marking frame 32 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:30:41] CLIENT: Video rect: 1920x1080 at 0,60
+[2020-12-14 23:30:41] CLIENT: Texture rect: 1280x720 at 0,0
+[2020-12-14 23:30:41] CLIENT: Video size: 1280x720, output size: 1920x1200, overlay size: 1920x1200
+[2020-12-14 23:30:41] CLIENT: Video rect: 1920x1080 at 0,60
+[2020-12-14 23:30:41] CLIENT: Texture rect: 1280x720 at 0,0
+[2020-12-14 23:30:41] CLIENT: Video rect: 1920x1080 at 0,60
+[2020-12-14 23:30:41] CLIENT: Texture rect: 1280x720 at 0,0
+[2020-12-14 23:30:41] CLIENT: Marking frame 4 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:41] CLIENT: Marking frame 5 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:41] CLIENT: Marking frame 6 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:41] CLIENT: Marking frame 7 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:41] CLIENT: Marking frame 8 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:41] CLIENT: Marking frame 9 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:41] CLIENT: Marking frame 10 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:41] CLIENT: Marking frame 11 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:41] CLIENT: Marking frame 12 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:41] CLIENT: Marking frame 13 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:41] CLIENT: Marking frame 14 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:41] CLIENT: Marking frame 15 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:41] CLIENT: Marking frame 16 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:41] CLIENT: Marking frame 17 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:41] CLIENT: Marking frame 21 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:41] CLIENT: Marking frame 22 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:41] CLIENT: Marking frame 23 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:41] CLIENT: Marking frame 24 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:41] CLIENT: Marking frame 25 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:41] CLIENT: Marking frame 26 complete with status k_EStreamFrameResultDroppedNetworkLost
+[2020-12-14 23:30:42] Setting target framerate: 59.75 [timing: game 10.00, capture 0.10, convert 9.45, encode 4.38, network 5.87, decode 1.00, display 1907441.13 (display)]
+[2020-12-14 23:30:42] Setting target bitrate to 5000 Kbit/s, burst bitrate is 25000 Kbit/s
+[2020-12-14 23:30:42] CLIENT: Marking frame 49 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:30:42] CLIENT: BPutInputFrame(): No input buffer available
+[2020-12-14 23:30:42] CLIENT: Marking frame 50 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:30:42] CLIENT: BPutInputFrame(): No input buffer available
+[2020-12-14 23:30:42] CLIENT: Marking frame 51 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:30:42] CLIENT: BPutInputFrame(): No input buffer available
+[2020-12-14 23:30:42] CLIENT: Marking frame 52 complete with status k_EStreamFrameResultDroppedReset
+[2020-12-14 23:30:42] CLIENT: Android texture hardware decoding

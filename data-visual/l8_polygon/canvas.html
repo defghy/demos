@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>多边形</title>
+  <script src="../assets/d3-hierarchy.v2.min.js"></script>
+  <style>
+    body {
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <canvas id="hierarchy" width="512" height="256"></canvas>
+  <script type="module">
+    import { Vector2D } from '../util.js';
+    import { draw } from './util.js';
+
+    // 创建上下文
+    const canvas = document.querySelector('#hierarchy');
+    const ctx = canvas.getContext('2d');
+
+    const points = [new Vector2D(0, 100)];
+    for(let i = 1; i <= 4; i++) {
+      const p = points[0].copy().rotate(i * Math.PI * 0.4);
+      points.push(p);
+    }
+    
+    const polygon = [
+      ...points,
+    ];
+
+    // 绘制正五边形
+    ctx.save();
+    ctx.translate(128, 128);
+    draw(ctx, polygon);
+    ctx.restore();
+
+    const stars = [
+      points[0],
+      points[2],
+      points[4],
+      points[1],
+      points[3],
+    ];
+
+    // 绘制正五角星
+    function drawStar(...args) {
+      ctx.save();
+      ctx.translate(400, 128);
+      draw(ctx, stars, ...args);
+      ctx.restore();
+    }
+
+
+  // 移动变色 原生api
+  canvas.addEventListener('mousemove', (evt) => {
+    const {x, y} = evt;
+    // 坐标转换
+    const offsetX = x;
+    const offsetY = y;
+
+    ctx.clearRect(400, 128, 128, 256);
+
+    if(ctx.isPointInPath(offsetX, offsetY)) {
+      drawStar({ fillStyle: '#f00' });
+    } else {
+      drawStar();
+    }
+  });
+  </script>
+</body>
+</html>

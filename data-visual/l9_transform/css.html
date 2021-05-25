@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>仿射变换</title>
+  <script src="../assets/d3-hierarchy.v2.min.js"></script>
+  <style>
+    html,body {
+      height: 100%;
+      margin: 0;
+    }
+    div {
+      background: #f00;
+      width: 100px;
+      height: 80px;
+      margin-top: 100px;
+    }
+    .block-transform {
+      transform: rotate(30deg) translate(100px,50px) scale(1.5);
+    }
+    .block-mat {
+      transform: var(--matrix);
+    }
+  </style>
+</head>
+<body>
+  <div></div>
+  <div class="block-transform"></div>
+  <div class="block-mat"></div>
+  <script type="module">  
+    import { multiply, transpose } from '../assets/math/functions/Mat3Func.js';
+
+    const rad = Math.PI / 6;
+    const a = [
+      Math.cos(rad), -Math.sin(rad), 0,
+      Math.sin(rad), Math.cos(rad), 0,
+      0, 0, 1
+    ];
+
+    const b = [
+      1, 0, 100,
+      0, 1, 50,
+      0, 0, 1
+    ];
+
+    const c = [
+      1.5, 0, 0,
+      0, 1.5, 0,
+      0, 0, 1
+    ];
+
+    let res = [a, b, c].reduce((a, b) => {
+      return multiply([], b, a);
+    });
+
+    /*
+    [1.299038105676658, -0.7499999999999999, 61.60254037844388, 
+      0.7499999999999999, 1.299038105676658, 93.30127018922192,
+      0, 0, 1]
+    */
+    res = transpose([], res).filter((i, index) => (index + 1) % 3);
+    document.body.style.setProperty('--matrix', `matrix(${res.join(',')})`);
+
+
+  </script>
+</body>
+</html>

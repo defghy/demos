@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>canvas transform</title>
+  <script src="../assets/d3-hierarchy.v2.min.js"></script>
+  <style>
+    #hierarchy {
+
+    }
+  </style>
+</head>
+<body>
+  <canvas id="hierarchy" width="512" height="256"></canvas>
+  <script type="module">
+    import rough from '../node_modules/roughjs/bundled/rough.esm.js';
+    // 创建上下文
+    const rc = rough.canvas(document.querySelector('#hierarchy'));
+    const ctx = rc.ctx;
+
+    ctx.translate(256, 256);
+    ctx.scale(1, -1);
+
+    rc.path('M-180 0L-80 100L20 0', {roughness: 2.8, strokeWidth: 2, fill: 'blue'});
+    rc.path('M-20 0L80 100L180 0');
+    rc.circle(0, 150, 105, {
+      stroke: 'red',
+      strokeWidth: 4,
+      fill: 'rgba(255,255, 0, 0.4)',
+      fillStyle: 'solid',
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>canvas 层次关系图</title>
+  <script src="../assets/d3-hierarchy.v2.min.js"></script>
+  <style>
+    #hierarchy {
+      width: 800px;
+      height: 800px;
+    }
+  </style>
+</head>
+<body>
+  <canvas id="hierarchy" width="1600" height="1600"></canvas>
+  <canvas id="homework" width="500" height="500"></canvas>
+  <script type="module">
+    import { searchTree, circle, text } from './tree.js';
+
+    const data = async function () {
+      const json = await fetch('./data.json');
+      const data = await json.json();
+
+      const regions = d3.hierarchy(data)
+        .sum(d => 1)
+        .sort((a, b) => b.value - a.value);
+
+      const pack = d3.pack()
+        .size([1600, 1600])
+        .padding(3);
+
+      const root = pack(regions);
+
+      return root;
+    };
+
+    const paintData = function(ctx, root) {
+
+      const paint = function(node) {
+        const { x, y, r } = node;
+        if (node.children?.length) {
+          circle(ctx, x, y, r);
+          node.children.forEach(n => paint(n));
+        } else {
+          const { name } = node.data;
+          circle(ctx, x, y, r);
+          text(ctx, name, x, y);
+        }
+      };
+
+      paint(root);
+    };
+
+    let lastHoverNode;
+    const handleHover = function(ctx, root, rx, ry) {
+      const targetNode = searchTree(root, node =>
+        !node.children?.length &&
+        Math.hypot(rx - node.x , ry - node.y) < node.r);
+      if (lastHoverNode && lastHoverNode !== targetNode) {
+        const { name } = lastHoverNode.data;
+        const { x, y, r } = lastHoverNode;
+        circle(ctx, x, y, r, '#fff');
+        circle(ctx, x, y, r, 'rgba(0, 0, 0, 0.45)');
+        text(ctx, name, x, y);
+      }
+      if (targetNode) {
+        const { name } = targetNode.data;
+        const { x, y, r } = targetNode;
+        circle(ctx, x, y, r, '#409EFF');
+        text(ctx, name, x, y);
+        lastHoverNode = targetNode;
+      }
+    };
+
+    (async function () {
+      const d = await data();
+      const canvas = document.querySelector('#hierarchy');
+      const ctx = canvas.getContext('2d');
+      paintData(ctx, d);
+
+      // 交互
+      canvas.addEventListener('pointermove', evt => {
+        const { x, y } = evt;
+        const ratio = 1600 / 800;
+        const rx = x * ratio;
+        const ry = y * ratio;
+        handleHover(ctx, d, rx, ry);
+      });
+    }());
+
+    // 另一种形状
+    (async function () {
+      const ctx = document.querySelector('#homework').getContext('2d');
+      ctx.beginPath();
+      ctx.moveTo(125, 100);
+      ctx.lineTo(100, 150);
+      ctx.lineTo(150,150);
+      ctx.closePath();
+      ctx.stroke();
+    }());
+  </script>
+</body>
+</html>

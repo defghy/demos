@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>仿射变换</title>
+  <script src="../assets/d3-hierarchy.v2.min.js"></script>
+  <style>
+    html,body {
+      height: 100%;
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <canvas id="hierarchy" width="512" height="512"></canvas>
+  <script type="module">  
+    import { Vec3 } from '../assets/math/Vec3.js';
+    const canvas = document.querySelector('canvas');
+    const ctx = canvas.getContext('2d');
+
+    function randomRGB() {
+      const v = new Vec3(
+        0.5 * Math.random(),
+        0.5 * Math.random(),
+        0.5 * Math.random(),
+      );
+      
+    }
+
+    ctx.translate(256, 256);
+    ctx.scale(1, -1);
+
+    for(let i = 0; i < 3; i++) {
+      const colorVector = randomRGB();
+      for(let j = 0; j < 5; j++) {
+        const c = colorVector.clone().scale(0.5 + 0.25 * j);
+        const rgb = c.map(item => Math.floor(item * 256));
+        ctx.fillStyle = `rgb(${rgb.join(',')})`;
+        ctx.beginPath();
+        ctx.arc((j - 2) * 60, (i - 1) * 60, 20, 0, Math.PI * 2);
+        ctx.fill();
+      }
+    }
+
+  </script>
+</body>
+</html>

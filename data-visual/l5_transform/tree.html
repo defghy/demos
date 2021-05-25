@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>tree</title>
+  <script src="../assets/d3-hierarchy.v2.min.js"></script>
+  <style>
+    #hierarchy {
+
+    }
+  </style>
+</head>
+<body>
+  <canvas id="hierarchy" width="512" height="256"></canvas>
+  <script type="module">
+    import { Vector2D } from './util.js';
+
+    function drawBranch(ctx, v0, length, thickness, dir, bias) {
+      const v = new Vector2D(1, 0).rotate(dir).scale(length);
+      const v1 = v0.copy().add(v);
+
+      ctx.save();
+      ctx.strokeStyle = '#000';
+      ctx.lineWidth = thickness;
+      ctx.beginPath();
+      ctx.moveTo(...v0);
+      ctx.lineTo(...v1);
+      ctx.stroke();
+      ctx.restore();
+
+
+      if(thickness > 2) {
+        const left = dir + 0.2;
+        drawBranch(ctx, v1, length * 0.9, thickness * 0.8, left, bias * 0.9);
+        const right = dir - 0.2;
+        drawBranch(ctx, v1, length * 0.9, thickness * 0.8, right, bias * 0.9);
+      }
+
+    }
+
+    (function() {
+      // 创建上下文
+      const canvas = document.querySelector('#hierarchy');
+      const ctx = canvas.getContext('2d');
+
+      ctx.translate(256, 256);
+      ctx.scale(1, -1);
+      ctx.lineGap = 'round';
+
+      drawBranch(ctx, new Vector2D(0, 1), 30, 7, Math.PI / 2, 1);
+    })();
+  </script>
+</body>
+</html>

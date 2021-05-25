@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>repeat</title>
+  <script src="../assets/d3-hierarchy.v2.min.js"></script>
+  <style>
+    html,body {
+      height: 100%;
+      margin: 0;
+      --BORDER_IDLE: 95%;
+    }
+    canvas {
+      background-image: 
+        linear-gradient(to right, transparent var(--BORDER_IDLE), #ccc 0),
+        linear-gradient(to bottom, transparent var(--BORDER_IDLE), #ccc 0);
+      background-size: 8px 8px, 8px 8px;
+      margin:  10px;
+    }
+    .hair {
+      width: 300px; height: 300px;
+      margin: 20px;
+      
+    }
+    .hair:after {
+      width: 100%; height: 100%;
+      display: block;
+      content: ' ';
+      background-image: 
+        linear-gradient(to right, #ccc 10%, transparent 0);
+      background-size: 8px 8px, 8px 8px;
+      background-repeat: no-repeat repeat;
+    }
+  </style>
+</head>
+<body>
+  <canvas id="hierarchy" width="512" height="512"></canvas>
+  <div class="hair"></div>
+  <script type="module">  
+    
+  </script>
+</body>
+</html>

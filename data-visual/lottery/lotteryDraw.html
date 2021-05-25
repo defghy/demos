@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>抽奖程序</title>
+  <script type="module" src="../assets/gl-renderer.js"></script>
+  <style>
+    div, button {
+      font-size: 3rem;
+    }
+    canvas {
+      background: #000;
+    }
+    span {
+      margin-left: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div><button id="updateBtn">开始</button><span id="user"></span></div>
+  <canvas id="glDoodle"></canvas>
+  <script type="module">
+      import '../assets/gl-renderer.js';
+
+      const resolution = 512;
+      const container = document.getElementById('glDoodle');
+      container.width = container.height = resolution;
+
+      const doodle = new window.(container, {autoUpdate: false});
+
+      (async function() {
+        const program = await doodle.load('./lottery.glsl');
+        doodle.useProgram(program);
+        doodle.uniforms.resolution = [resolution, resolution];
+        doodle.render();
+      }());
+  </script>
+</body>
+</html>

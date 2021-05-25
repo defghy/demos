@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="pragma" content="no-cache">
+  <link rel="icon" href="https://img-oss.yunshanmeicai.com/amp/default/icon/amp_app_1546420209_8986_icon.png" type="image/x-icon" />
+  <meta http-equiv="cache-control" content="no-cache">
+  <meta http-equiv="expires" content="0">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
+  <title>拖拽 测试</title>
+  <link href="./drag/drag.css" rel="stylesheet" type="text/css">
+  <script src="/assets/hammer.js"></script>
+  <script src="/assets/vue.js"></script>
+  <script src="./assets/pixi-legacy.js"></script>
+  <style>
+    .wrapper {
+        position: relative;
+    }
+    .wrapper .frame {
+        position: absolute;
+        border: 2px solid #2c1acc;
+        cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div id="app">
+    <div class="wrapper">
+      <div class="frame" 
+        v-drag="onDrag"
+        v-show="activeItem.width" 
+        :style="{
+          width: `${activeItem.width}px`,
+          height: `${activeItem.height}px`,
+          left: `${activeItem.left}px`,
+          top: `${activeItem.top}px`,
+        }"></div>
+    </div>
+    <button class="btn" @click="addDude">+</button>
+  </div>
+  <script type="module" src="./drag/index.js"></script>
+  <script type="module" src="./drag/v-drag.js"></script>
+<script type="module">
+  import { init, dude } from './drag/index.js';
+  new Vue({
+    el:"#app",
+    data: function() {
+      return {
+        activeItem: {}
+      };
+    },
+    created() {
+
+    },
+    mounted() {
+      init({
+        wrapper: this.$el.querySelector('.wrapper'),
+        onSelect: (e) => {
+          const curr = e.target;
+          this.activeItem = {
+            width: curr.width,
+            height: curr.height,
+            left: curr.x - curr.width/2 - 2,
+            top: curr.y - curr.height/2 - 2,
+            dude: curr
+          };
+        }
+      });
+    },
+    methods:{
+      addDude() {
+        dude.add();
+      },
+      onDrag({ deltaX, deltaY, event }) {
+        const activeItem = this.activeItem;
+        const activeDude = activeItem.dude;
+        Object.assign(activeItem, {
+          left: deltaX + activeItem.left,
+          top: deltaY + activeItem.top,
+        });
+        Object.assign(activeDude, {
+          x: deltaX + activeDude.x,
+          y: deltaY + activeDude.y,
+        });
+      },
+    }
+  });
+</script>
+</body>
+</html>

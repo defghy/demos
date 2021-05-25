@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="pragma" content="no-cache">
+  <title>小球运动至终点</title>
+  <script type="module" src="./util.js"></script>
+  <style type="text/css">
+    .ball {
+      position: absolute; left: 300px; top: 200px;
+      width: 10px;
+      height: 10px;
+      background-color: red;
+      border-radius: 50%;
+      
+      offset-path: path('M100,100 A300,200 0 0,1 300,200');
+      offset-distance: 1px;
+
+      animation: drop 3s infinite;
+    }
+
+    @keyframes drop {
+      from {
+        offset-distance: 0%;
+      }
+      to {
+        offset-distance: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="ball"></div>
+  <script type="module">
+
+  </script>
+</body>
+</html>

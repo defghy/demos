@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>svg 层次关系图</title>
+  <script src="../assets/d3-hierarchy.v2.min.js"></script>
+  <style>
+    svg {
+      width: 800px;
+      height: 800px;
+    }
+    svg text {
+      fill: #fff;
+    }
+    svg text:hover {
+      fill: #f0f;
+    }
+  </style>
+</head>
+<body>
+
+  <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1600 1600">
+
+  </svg>
+  <script type="module">
+    import { searchTree } from './tree.js';
+
+    const data = async function () {
+      const json = await fetch('./data.json');
+      const data = await json.json();
+
+      const regions = d3.hierarchy(data)
+        .sum(d => 1)
+        .sort((a, b) => b.value - a.value);
+
+      const pack = d3.pack()
+        .size([1600, 1600])
+        .padding(3);
+
+      const root = pack(regions);
+
+      return root;
+    };
+
+    const circle = function(parent, node) {
+      const {x, y, r} = node;
+      const circle = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+      circle.setAttribute('cx', x);
+      circle.setAttribute('cy', y);
+      circle.setAttribute('r', r);
+      circle.setAttribute('fill', 'rgba(0, 0, 0, 0.2)');
+      parent.appendChild(circle);
+      return circle;
+    };
+
+    const text = function(parent, node) {
+      const { x, y, data } = node;
+      const text = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+      text.setAttribute('font-family', 'Arial');
+      text.setAttribute('font-size', '1.5rem');
+      text.setAttribute('text-anchor', 'middle');
+      text.setAttribute('x', x);
+      text.setAttribute('y', y);
+      text.textContent = data.name;
+      parent.appendChild(text);
+    };
+
+    const paintData = function(root, data) {
+
+      const paint = function(parent, node) {
+        const { x, y, r } = node;
+        if (node.children?.length) {
+          circle(parent, node);
+          const group = document.createElementNS('http://www.w3.org/2000/svg', 'g');
+          node.children.forEach(n => paint(group, n));
+          parent.appendChild(group);
+        } else {
+          const { name } = node.data;
+          circle(parent, node);
+          text(parent, node);
+        }
+      };
+
+      paint(root, data);
+    };
+
+    (async function () {
+      const d = await data();
+      const svgRoot = document.querySelector('svg');
+      paintData(svgRoot, d);
+    }());
+  </script>
+</body>
+</html>

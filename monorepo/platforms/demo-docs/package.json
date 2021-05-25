@@ -1,0 +1,17 @@
+{
+  "name": "@demo/docs",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "dev": "vuepress dev src"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@demo/ui": "0.1.0",
+    "@demo/utils": "0.1.0"
+  },
+  "devDependencies": {
+    "vuepress": "^1.6.0"
+  }
+}

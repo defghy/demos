@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>灰阶</title>
+  <script src="../assets/d3-hierarchy.v2.min.js"></script>
+  <style>
+    body {
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <canvas id="hierarchy"></canvas>
+  <script type="module">
+    import { loadImage, getImageData, traverseImgData } from './util.js';
+    import { grayscale, brightness, saturate, contrast, transformColor } from './color_matrix.js';
+
+    const canvas = document.getElementById('hierarchy');
+    const context = canvas.getContext('2d');
+  
+    (async function() {
+      // 异步加载图片
+      const img = await loadImage('./girl1.jpg');
+      // 获取图片的 imageData 数据对象
+      const imageData = getImageData(img);
+      // 遍历 imageData 数据对象
+
+      traverseImgData(imageData, ({r, g, b, a}) => {
+        return transformColor(
+          [r, g, b, a],
+          grayscale(0.5), saturate(1.2), contrast(1.1), brightness(1.2)
+        );
+      });
+
+      // 更新canvas内容
+      canvas.width = imageData.width;
+      canvas.height = imageData.height;
+      context.putImageData(imageData, 0, 0);
+    })();
+
+  </script>
+</body>
+</html>

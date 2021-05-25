@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="pragma" content="no-cache">
+  <title>环形进度条</title>
+  <script type="module" src="./util.js"></script>
+  <style type="text/css">
+    #path {
+      animation: dash 2s infinite;;
+    }
+    @keyframes dash { 
+      from { stroke-dashoffset: 0; } 
+      50% { stroke-dashoffset: unset; }
+      to { stroke-dashoffset: 0; } 
+    }
+  </style>
+</head>
+<body>
+  <svg width="300px" height="300px" viewBox="0 0 400 400" version="1.1">
+    <path id="path" fill="none" stroke="#FD7991" stroke-width="6" stroke-linecap="round">
+
+    </path>
+  </svg>
+  <script type="module">
+    import { arc } from './util.js';
+    const cx = 200;
+    const cy = 200;
+    const r = 100;
+    const path = arc(200, 200, 100, -90, 180);
+
+    const pathDom = document.querySelector('#path');
+    pathDom.setAttribute('d', path);
+
+    const lineLen = 2 * Math.PI * r * 3 / 4;
+    pathDom.setAttribute('stroke-dasharray', lineLen);
+    pathDom.setAttribute('stroke-dashoffset', lineLen);
+
+    var style = document.styleSheets[0];
+    style.insertRule(`
+      @keyframes dash { 
+        from { stroke-dashoffset: 0; } 
+        50% { stroke-dashoffset: ${lineLen}px; }
+        to { stroke-dashoffset: 0; } 
+      }
+    `, 2);
+  </script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>svg 图</title>
+  <script type="module" src="../util.js"></script>
+</head>
+<body>
+
+ <!--
+      dataset = {
+        total: [25, 26, 40, 45, 68],
+        current: [15, 11, 17, 25, 37],
+      }
+  -->
+  <svg xmlns="http://www.w3.org/2000/svg" width="120px" height="240px" viewBox="0 0 60 100">
+    <g transform="translate(0, 100) scale(1, -1)">
+      <g>
+        <rect x="1" y="0" width="10" height="25" fill="#37c"/>
+        <rect x="13" y="0" width="10" height="26" fill="#37c"/>
+        <rect x="25" y="0" width="10" height="40" fill="#37c"/>
+        <rect x="37" y="0" width="10" height="45" fill="#37c"/>
+        <rect x="49" y="0" width="10" height="68" fill="#37c"/>
+      </g>
+      <g>
+        <rect x="1" y="0" width="10" height="15" fill="#3c7"/>
+        <rect x="13" y="0" width="10" height="11" fill="#3c7"/>
+        <rect x="25" y="0" width="10" height="17" fill="#3c7"/>
+        <rect x="37" y="0" width="10" height="25" fill="#3c7"/>
+        <rect x="49" y="0" width="10" height="37" fill="#3c7"/>
+      </g>
+    </g>
+  </svg>
+  <svg id="Fan" xmlns="http://www.w3.org/2000/svg" width="240px" height="240px" viewBox="0 0 100 100">
+    <g></g>
+  </svg>
+  <svg id="Line" xmlns="http://www.w3.org/2000/svg" width="240px" height="240px" viewBox="0 0 100 100">
+    <g></g>
+  </svg>
+  <script type="module">
+    import { fan } from '../util.js';
+
+    // 扇形
+    const arcs = [
+      fan({ r: 40, angleStart: 0, angleEnd: 30 }),
+      fan({ r: 40, angleStart: 30, angleEnd: 120 }),
+      fan({ r: 40, angleStart: 120, angleEnd: 360 })
+    ];
+    const total = arcs.length;
+    let root = document.querySelector('#Fan g');
+    arcs.forEach((path, i) => {
+      const dom = document.createElementNS("http://www.w3.org/2000/svg", 'path');
+      const color = `rgba(0,0,0,${i/total})`;
+      dom.setAttribute('d', path);
+      dom.setAttribute('fill', color);
+      dom.setAttribute('stroke', color);
+      root.appendChild(dom);
+    });
+
+    // 折线图
+    const lines = [
+      [0, 100],
+      [10, 90],
+      [20, 75],
+      [30, 66],
+      [40, 61],
+      [50, 57],
+      [60, 55],
+      [70, 48],
+      [80, 42],
+      [90, 33],
+      [100, 30],
+    ];
+    root = document.querySelector('#Line g');
+    lines.forEach((paths, i) => {
+      if (i == 0) {
+        return;
+      }
+      const dom = document.createElementNS("http://www.w3.org/2000/svg", 'path');
+      const color = `#765432`;
+      const [x, y] = paths;
+      const [x2, y2] = lines[i - 1];
+      dom.setAttribute('d', `M${x2} ${y2} L${x} ${y}`);
+      dom.setAttribute('stroke', color);
+      dom.setAttribute('stroke-width', 3);
+      root.appendChild(dom);
+    });
+  </script>
+</body>
+</html>
