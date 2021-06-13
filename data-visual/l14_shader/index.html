@@ -34,7 +34,9 @@
       varying vec2 vUv;
       void main() {
         float d = distance(vUv, vec2(0.5)); 
-        gl_FragColor.rgb = smoothstep(d, 0.2, 0.0) * vec3(1.0);
+        // gl_FragColor.rgb = smoothstep(0.2, 0.205, d) * vec3(1.0);
+        d = fract(20.0 * abs(d));
+        gl_FragColor.rgb = (smoothstep(0.15, 0.2, d) - smoothstep(0.2, 0.25, d)) * vec3(1.0);
         gl_FragColor.a = 1.0;
       }
     `;
