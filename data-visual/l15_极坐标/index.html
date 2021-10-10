@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>曲线参数方程</title>
+  <script src="../assets/d3-hierarchy.v2.min.js"></script>
+  <style>
+    #hierarchy {
+
+    }
+  </style>
+</head>
+<body>
+  <canvas id="hierarchy" width="512" height="256"></canvas>
+  <script type="module">
+    import { parametric } from './util.js';
+
+    // 创建上下文
+    const canvas = document.querySelector('#hierarchy');
+    const ctx = canvas.getContext('2d');
+
+    const fromPolar = (r, θ) => {
+      return [r * Math.cos(θ), r * Math.sin(θ)];
+    };
+
+    // 画圆
+    const arc = parametric(
+      t => 200,
+      t => t,
+      fromPolar,
+    );
+    arc(0, Math.PI).draw(ctx);
+  </script>
+</body>
+</html>
