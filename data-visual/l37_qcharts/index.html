@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>仪表盘</title>
+</head>
+<body>
+  <div id="app" style="width:1200px;height:600px;"></div>
+  <script src="https://d3js.org/d3.v6.js"></script>
+  <script src="https://unpkg.com/spritejs/dist/spritejs.min.js"></script>
+  <script src="https://unpkg.com/@qcharts/core/dist/index.js"></script>
+  <script>
+    (async function() {
+
+      const { Chart, Gauge } = qcharts;
+      const gauge = new Gauge({ min: 0, max: 100, percent:60, lineWidth: 20, tickStep: 10});
+      gauge.style('title', { fontSize: 36 });
+
+      const chart = new Chart({
+        container: '#app'
+      });
+      chart.append(gauge);
+
+    }());
+  </script>
+</body>
+</html>
