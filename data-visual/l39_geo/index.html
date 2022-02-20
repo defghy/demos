@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mercator Demo</title>
+</head>
+<body>
+  <canvas width="1024" height="512"></canvas>
+  <script>
+    const width = 1024;
+    const height = 512;
+    function projection([longitude, latitude]) {
+      const x = width * (180 + longitude) / 360;
+      const y = height * (1.0 - (90 + latitude) / 180); // Canvas坐标系y轴朝下
+      return [x, y];
+    }
+
+    function drawPoints(ctx, points) {
+      ctx.beginPath();
+      ctx.moveTo(...points[0]);
+      for(let i = 1; i < points.length; i++) {
+        ctx.lineTo(...points[i]);
+      }
+      ctx.fill();
+    }
+
+    async function mapDataToCountries(geoData, covidData) {
+        const covidDataMap = {};
+        covidData.dailyReports.forEach((d) => {
+          const date = d.updatedDate;
+          const countries = d.countries;
+          countries.forEach((country) => {
+            const name = country.country;
+            covidDataMap[name] = covidDataMap[name] || {};
+            covidDataMap[name][date] = country;
+          });
+        });
+        geoData.features.forEach((d) => {
+          const name = d.properties.name;
+          d.properties.covid = covidDataMap[name];
+        });
+    }
+
+    function mapColor(confirmed) {
+        if (confirmed < 10) {
+          return "rgb(250, 247, 171)";
+        }
+        if (confirmed < 100) {
+          return "rgb(255, 186, 66)";
+        }
+        if (confirmed < 500) {
+          return "rgb(234, 110, 41)";
+        }
+        if (confirmed < 1000) {
+          return "rgb(224, 81, 57)";
+        }
+        if (confirmed < 10000) {
+          return "rgb(192, 50, 39)";
+        }
+        return "rgb(151, 32, 19)";
+    }
+
+    function drawMap(ctx, countries, date) {
+        date = date.toJSON().split('T')[0];
+        ctx.fillStyle = "#3ac";
+        countries.features.forEach(({ geometry, properties }) => {
+          const covid = properties.covid ? properties.covid[date] : null;
+          if (covid) {
+            const confirmed = covid.confirmed;
+            if (confirmed) {
+              ctx.fillStyle = mapColor(confirmed);
+            }
+          }
+          if (geometry.type === "MultiPolygon") {
+            const coordinates = geometry.coordinates;
+            if (coordinates) {
+              coordinates.forEach((contours) => {
+                contours.forEach((path) => {
+                  const points = path.map(projection);
+                  drawPoints(ctx, points);
+                });
+              });
+            }
+          } else if (geometry.type === "Polygon") {
+            const contours = geometry.coordinates;
+            contours.forEach((path) => {
+              const points = path.map(projection);
+              drawPoints(ctx, points);
+            });
+          }
+        });
+      }
+    
+    const canvas = document.querySelector('canvas');
+    const ctx = canvas.getContext('2d');
+    ctx.fillStyle = 'black';
+
+    (async function () {
+      const worldData = await (await fetch('./world-geojson.json')).json();
+      const covidData = await (await fetch('./covid-data.json')).json();
+
+      mapDataToCountries(worldData, covidData);
+      const startDate = new Date("2020/02/24");
+        let i = 0;
+        const timer = setInterval(() => {
+          const date = new Date(startDate.getTime() + 86400000 * ++i);
+          drawMap(ctx, worldData, date);
+          if (date.getTime() + 86400000 > Date.now()) {
+            clearInterval(timer);
+          }
+        }, 100);
+      drawMap(ctx, worldData, startDate);
+    }());
+  </script>
+</body>
+</html>
