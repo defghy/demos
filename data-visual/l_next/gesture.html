@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gesture Test</title>
+</head>
+<style>
+  .panel {
+    width: 500px;
+    height: 500px;
+  }
+
+  .circle {
+    stroke: #ccc;
+    stroke-width: 4;
+    fill: #fff;
+  }
+  .circle.active {
+    stroke-width: 0;
+    fill: #fa8919;
+  }
+  .follow {
+    stroke-width: 2;
+    stroke: red;
+  }
+</style>
+<body>
+  <svg class="panel">
+
+  </svg>
+  <script>
+    const RADIUS = 30;
+    const points = [
+      { x: 50, y: 50 },
+      { x: 130, y: 50, },
+      { x: 210, y: 50, }
+    ];
+
+    const root = document.querySelector('.panel');
+
+    (function init() {
+      const circles = points.map((point, idx) => {
+        const circle = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+        circle.classList.add('circle');
+        circle.setAttribute('cx', point.x);
+        circle.setAttribute('cy', point.y);
+        circle.setAttribute('r', RADIUS);
+        point.el = circle;
+        point.key = idx;
+        root.appendChild(circle);
+      });
+    })();
+
+    const pickCircle = function(x, y) {
+      const target = points.filter(point => !secret[point.key]).find(point => Math.sqrt((x - point.x) ** 2 + (y - point.y) ** 2) <= RADIUS);
+      if (target) {
+        target.el.classList.add('active');
+        secret[target.key] = true;
+      }
+      return target;
+    };
+ 
+    const STATUS = {
+      NONE: 'none',
+      INIT: 'init',
+      START: 'start',
+    };
+    let status = STATUS.NONE;
+    let startPoint = null;
+    let followPath = null;
+    let secret = {};
+    const freshFollowPath = function(start, {x, y}) {
+      if (!followPath) {
+        followPath = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+        followPath.classList.add('follow');
+        root.appendChild(followPath);
+      }
+
+      const path = [
+        `M ${start.x} ${start.y}`,
+        `L ${x} ${y}`,
+      ].join(' ');
+      followPath.setAttribute('d', path);
+    };
+    const addPath = function(start, end) {
+      const p = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+      p.classList.add('follow');
+
+      const path = [
+        `M ${start.x} ${start.y}`,
+        `L ${end.x} ${end.y}`,
+      ].join(' ');
+      p.setAttribute('d', path);
+
+      root.appendChild(p);
+    };
+    root.addEventListener('pointerdown', () => {
+      status = STATUS.INIT;
+    });
+    root.addEventListener('pointermove', (evt) => {
+      if (status === STATUS.NONE) {
+        return;
+      }
+      
+      const { clientX: x, clientY: y } = evt;
+      // 选中点
+      if (status === STATUS.INIT) {
+        const circle = pickCircle(x, y);
+        if (circle) {
+          startPoint = circle;
+          freshFollowPath(circle, {x, y});
+          status = STATUS.START;
+        }
+      }
+
+      // 划线
+      if (status === STATUS.START) {
+        freshFollowPath(startPoint, {x, y});
+        const circle = pickCircle(x, y);
+        // 找到了下一个点
+        if (circle) {
+          addPath(startPoint, circle);
+          startPoint = circle;
+          freshFollowPath(circle, {x, y});
+        }
+
+      }
+
+    });
+    root.addEventListener('pointerup', (evt) => {
+      status = STATUS.NONE;
+    });
+  </script>
+</body>
+</html>
