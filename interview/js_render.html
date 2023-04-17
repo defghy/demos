@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="pragma" content="no-cache">
+  <!-- <meta name="referrer" content="no-referrer"> -->
+  <title>测试js是否会阻塞dom渲染</title>
+  <style type="text/css">
+    .test {
+      background: #ff0;
+    }
+  </style>
+</head>
+<body>
+  <div class="test">
+    修改我的宽高；
+    - 这里js是阻塞渲染的；
+    - 但是如果是调试，那么执行完一句后马上渲染
+  </div>
+  <button onclick="startTest()">开始测试</button>
+
+  <script type="text/javascript">
+    window.startTest = function() {
+      const target = document.querySelector('.test');
+      const start = Date.now();
+      const timeout = 1000 * 10;
+      let diff = 0;
+
+      target.style.width = `30px`;
+      while(diff < timeout) {
+        diff = Date.now() - start;
+        // 每1秒修改1次width
+        const step = Math.floor(diff / 1000);
+        target.style.width = `${step * 100}px`;
+      }
+
+    }
+    </script>
+</body>
+</html>
