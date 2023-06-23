@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="pragma" content="no-cache">
+  <!-- <meta name="referrer" content="no-referrer"> -->
+  <title>测试js是否会阻塞dom渲染</title>
+  <style type="text/css">
+
+body, html {
+  width: 100%;
+  height: 100%;
+}
+
+.modals {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0;
+  box-sizing: border-box;
+}
+
+.modal {
+  width: 300px;
+  height: 100%;
+  max-height: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-header {
+  background-color: #f44336;
+  height: 50px;
+}
+
+.modal-body {
+  background-color: #2973af;
+  flex: 1;
+
+}
+
+  </style>
+</head>
+<body>
+  <div class="modals">
+    <div class="modal">
+      <div class="modal-header"></div>
+      <div class="modal-body"></div>
+    </div>
+  </div>
+</body>
+</html>
