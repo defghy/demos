@@ -9,6 +9,6 @@
     "dev:vite": "cd platforms/demo-vite && npm run dev"
   },
   "devDependencies": {
-    "pnpm": "^6.4.0"
+    "pnpm": "^8.6.5"
   }
 }
