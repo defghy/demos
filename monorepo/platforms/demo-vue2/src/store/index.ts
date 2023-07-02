@@ -3,17 +3,18 @@ import Vuex, { ActionTree } from 'vuex'
 
 import { createNamespacedHelpers, useState, useActions, } from 'vuex-composition-helpers';
 
-Vue.use(Vuex)
+Vue.use(Vuex);
 
 const state = {
   userName: '',
 };
 
-const actions: ActionTree<typeof state, typeof state> = {
+const defineAction = <T extends ActionTree<typeof state, typeof state>>(actions: T) =>  actions;
+const actions = defineAction({
   updateUser({ state }, userName) {
     state.userName = userName;
   },
-};
+});
 
 const Store = new Vuex.Store({
   state,
