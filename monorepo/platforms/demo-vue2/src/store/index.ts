@@ -1,17 +1,33 @@
 import Vue from 'vue'
-import Vuex from 'vuex'
+import Vuex, { ActionTree } from 'vuex'
+
+import { createNamespacedHelpers, useState, useActions, } from 'vuex-composition-helpers';
 
 Vue.use(Vuex)
 
-export default new Vuex.Store({
-  state: {
+const state = {
+  userName: '',
+};
+
+const actions: ActionTree<typeof state, typeof state> = {
+  updateUser({ state }, userName) {
+    state.userName = userName;
   },
+};
+
+const Store = new Vuex.Store({
+  state,
   getters: {
+
   },
   mutations: {
   },
-  actions: {
-  },
+  actions,
   modules: {
   }
-})
+});
+
+export const useRootState = (args: (keyof typeof state)[]) => useState<typeof state>(args);
+export const useRootActions= (args: (keyof typeof actions)[]) => useActions<typeof actions>(args);
+
+export default Store;

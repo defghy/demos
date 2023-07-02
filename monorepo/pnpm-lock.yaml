@@ -175,6 +175,9 @@ importers:
       vuex:
         specifier: ^3.6.2
         version: 3.6.2(vue@2.6.14)
+      vuex-composition-helpers:
+        specifier: ^1.1.2
+        version: 1.1.2
     devDependencies:
       '@typescript-eslint/eslint-plugin':
         specifier: ^5.4.0
@@ -12123,6 +12126,10 @@ packages:
       - webpack-command
       - whiskers
     dev: true
+
+  /vuex-composition-helpers@1.1.2:
+    resolution: {integrity: sha512-V4S+CNkM8qnMtBkjJV+JnWCj0yyFecWgaiiCIrjUiqDjbIUIN5zfsifrPWnCAb1OwuTBhsRapwbT5ZDRK3sNJg==}
+    dev: false
 
   /vuex@3.6.2(vue@2.6.14):
     resolution: {integrity: sha512-ETW44IqCgBpVomy520DT5jf8n0zoCac+sxWnn+hMe/CzaSejb/eVw2YToiXYX+Ex/AuHHia28vWTq4goAexFbw==}
