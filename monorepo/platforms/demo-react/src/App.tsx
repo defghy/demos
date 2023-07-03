@@ -1,16 +1,20 @@
-import React, { useState, useMemo, useEffect } from 'react';
+import React, { useState, useMemo, useEffect, createContext } from 'react';
 import logo from './logo.svg';
 import './App.css';
+
+import Count from './components/Count';
+
+export const AppContext = createContext(0);
 
 function App() {
 
   const [ count, updateCount ] = useState(0);
+  const [ timer ] = useState(Date.now());
   const addCount = function() {
     updateCount(count + 1);
   };
-  const countStr = useMemo(() => {
-    return `数字为：${count}`;
-  }, [count]);
+
+  // watch
   useEffect(() => {
     console.log('Count changed:', count);
     return () => {
@@ -19,15 +23,18 @@ function App() {
     };
   }, [count]); // 仅在 count 发生变化时执行
 
+  // provide, inject
+
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <button onClick={addCount}>add</button>
-        <div>{countStr}</div>
-      </header>
-    </div>
+    <AppContext.Provider value={timer}>
+      <div className="App">
+        <header className="App-header">
+          <img src={logo} className="App-logo" alt="logo" />
+          <Count count={count} onUpdate={addCount}></Count>
+        </header>
+      </div>
+    </AppContext.Provider>
   );
 }
 
