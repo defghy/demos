@@ -4,7 +4,16 @@ import { ref, watch, provide, computed } from 'vue'
 defineProps<{ msg: string }>()
 
 const count = ref(0)
-const addCount = () => count.value++;
+let cardHeight = ref(0);
+const addCount = () => {
+  count.value++;
+  count.value++;
+  count.value++;
+  cardHeight.value++;
+};
+const testReflow = () => {
+  console.log(card.value?.offsetWidth);
+};
 watch(() => count.value, (n, o) => {
   console.log(`updateCount: ${o} => ${n}`);
 });
@@ -21,14 +30,15 @@ const cardCompute = computed(() => card.value, {
   }
 });
 
-console.log(cardCompute.value);
+console.log(cardCompute.value, 'huyu3');
 </script>
 
 <template>
   <h1>{{ msg }}</h1>
 
-  <div ref="card" class="card">
+  <div ref="card" class="card" :style="{ '--btn-height': cardHeight + 'px'}">
     <button type="button" @click="addCount">count is {{ count }}</button>
+    <button type="button" @click="testReflow">test reflow</button>
     <p>
       Edit
       <code>components/HelloWorld.vue</code> to test HMR
@@ -49,8 +59,13 @@ console.log(cardCompute.value);
   <p class="read-the-docs">Click on the Vite and Vue logos to learn more</p>
 </template>
 
-<style scoped>
+<style scoped lang="less">
 .read-the-docs {
-  color: #888;
+  color: #000;
+}
+.card {
+  p {
+    height: var(--btn-height);
+  }
 }
 </style>

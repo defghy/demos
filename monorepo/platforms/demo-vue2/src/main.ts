@@ -4,7 +4,9 @@ import router from './router'
 import store from './store'
 import VueCompositionAPI from '@vue/composition-api';
 
-Vue.config.productionTip = false
+Vue.config.productionTip = false;
+
+(window as any).Vue = Vue;
 
 Vue.use(VueCompositionAPI);
 
