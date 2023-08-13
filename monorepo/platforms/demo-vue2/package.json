@@ -30,6 +30,7 @@
     "less": "^4.0.0",
     "less-loader": "^7.3.0",
     "typescript": "~4.5.5",
+    "@antv/g6": "4.6.15",
     "vue-template-compiler": "^2.6.14"
   }
 }
