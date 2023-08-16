@@ -7,43 +7,29 @@
 <meta charset="utf-8"> 
 
 <style> 
-
-div{
-
-    margin:20px 10px;
-
+body, html {
+    height: 100%;
 }
-
-.div1
-
-{
-
-  column-count: 3;
-    column-gap: 20px;
-    column-rule: solid #ddd 1px;
-
+.container {
+    height: 100%;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
 }
-
-.div2
-
-{
-
-    column-count:4;
-
-    column-width:100px;
-
-     
-
-    -moz-column-count:4; /* Firefox */
-
-    -moz-column-width:100px; /* Firefox */
-
-     
-
-    -webkit-column-count:4; /* Safari and Chrome */
-
-    -webkit-column-width:100px; /* Safari and Chrome */
-
+.header {
+  background-color: #555;
+  color: #fff;
+  padding: 20px 10px; 
+}
+.body {
+  padding: 20px 10px;
+  font-size: 40px;
+  flex: 1;
+}
+.footer {
+  background-color: #555;
+  color: #fff;
+  padding: 20px 10px;
 }
 
 </style>
@@ -54,17 +40,19 @@ div{
 
  
 
-<div class="div1">
+    <div class="container">
+        <div class="header">header</div>
+        <div class="body">
+          <p>阿斯顿发斯蒂芬</p>
+          <p>阿斯顿发斯蒂芬</p>
+          <p>阿斯顿发斯蒂芬</p>
+          <p>阿斯顿发斯蒂芬</p>
+          <p>阿斯顿发斯蒂芬</p>
 
-当我年轻的时候，我梦想改变这个世界；当我成熟以后，我发现我不能够改变这个世界，我将目光缩短了些，决定只改变我的国家；当我进入暮年以后，我发现我不能够改变我们的国家，我的最后愿望仅仅是改变一下我的家庭，但是，这也不可能。当我现在躺在床上，行将就木时，我突然意识到：如果一开始我仅仅去改变我自己，然后，我可能改变我的家庭；在家人的帮助和鼓励下，我可能为国家做一些事情；然后，谁知道呢?我甚至可能改变这个世界。
 
-</div>
-
-<div class="div2">
-
-当我年轻的时候，我梦想改变这个世界；当我成熟以后，我发现我不能够改变这个世界，我将目光缩短了些，决定只改变我的国家；当我进入暮年以后，我发现我不能够改变我们的国家，我的最后愿望仅仅是改变一下我的家庭，但是，这也不可能。当我现在躺在床上，行将就木时，我突然意识到：如果一开始我仅仅去改变我自己，然后，我可能改变我的家庭；在家人的帮助和鼓励下，我可能为国家做一些事情；然后，谁知道呢?我甚至可能改变这个世界。
-
-</div>
+        </div>
+        <div class="footer">footer</div>
+      </div>
 
  
 

@@ -96,6 +96,12 @@ importers:
         specifier: ^0.0.24
         version: 0.0.24
 
+  platforms/demo-node:
+    devDependencies:
+      '@azure/openai':
+        specifier: 1.0.0-beta.4
+        version: 1.0.0-beta.4
+
   platforms/demo-react:
     dependencies:
       '@testing-library/jest-dom':
@@ -509,6 +515,99 @@ packages:
       leven: 3.1.0
     dev: false
 
+  /@azure-rest/core-client@1.1.4:
+    resolution: {integrity: sha512-RUIQOA8T0WcbNlddr8hjl2MuC5GVRqmMwPXqBVsgvdKesLy+eg3y/6nf3qe2fvcJMI1gF6VtgU5U4hRaR4w4ag==}
+    engines: {node: '>=14.0.0'}
+    dependencies:
+      '@azure/abort-controller': 1.1.0
+      '@azure/core-auth': 1.5.0
+      '@azure/core-rest-pipeline': 1.12.0
+      '@azure/core-tracing': 1.0.1
+      '@azure/core-util': 1.4.0
+      tslib: 2.6.1
+    transitivePeerDependencies:
+      - supports-color
+    dev: true
+
+  /@azure/abort-controller@1.1.0:
+    resolution: {integrity: sha512-TrRLIoSQVzfAJX9H1JeFjzAoDGcoK1IYX1UImfceTZpsyYfWr09Ss1aHW1y5TrrR3iq6RZLBwJ3E24uwPhwahw==}
+    engines: {node: '>=12.0.0'}
+    dependencies:
+      tslib: 2.6.1
+    dev: true
+
+  /@azure/core-auth@1.5.0:
+    resolution: {integrity: sha512-udzoBuYG1VBoHVohDTrvKjyzel34zt77Bhp7dQntVGGD0ehVq48owENbBG8fIgkHRNUBQH5k1r0hpoMu5L8+kw==}
+    engines: {node: '>=14.0.0'}
+    dependencies:
+      '@azure/abort-controller': 1.1.0
+      '@azure/core-util': 1.4.0
+      tslib: 2.6.1
+    dev: true
+
+  /@azure/core-lro@2.5.4:
+    resolution: {integrity: sha512-3GJiMVH7/10bulzOKGrrLeG/uCBH/9VtxqaMcB9lIqAeamI/xYQSHJL/KcsLDuH+yTjYpro/u6D/MuRe4dN70Q==}
+    engines: {node: '>=14.0.0'}
+    dependencies:
+      '@azure/abort-controller': 1.1.0
+      '@azure/core-util': 1.4.0
+      '@azure/logger': 1.0.4
+      tslib: 2.6.1
+    dev: true
+
+  /@azure/core-rest-pipeline@1.12.0:
+    resolution: {integrity: sha512-+MnSB0vGZjszSzr5AW8z93/9fkDu2RLtWmAN8gskURq7EW2sSwqy8jZa0V26rjuBVkwhdA3Hw8z3VWoeBUOw+A==}
+    engines: {node: '>=14.0.0'}
+    dependencies:
+      '@azure/abort-controller': 1.1.0
+      '@azure/core-auth': 1.5.0
+      '@azure/core-tracing': 1.0.1
+      '@azure/core-util': 1.4.0
+      '@azure/logger': 1.0.4
+      form-data: 4.0.0
+      http-proxy-agent: 5.0.0
+      https-proxy-agent: 5.0.1
+      tslib: 2.6.1
+    transitivePeerDependencies:
+      - supports-color
+    dev: true
+
+  /@azure/core-tracing@1.0.1:
+    resolution: {integrity: sha512-I5CGMoLtX+pI17ZdiFJZgxMJApsK6jjfm85hpgp3oazCdq5Wxgh4wMr7ge/TTWW1B5WBuvIOI1fMU/FrOAMKrw==}
+    engines: {node: '>=12.0.0'}
+    dependencies:
+      tslib: 2.6.1
+    dev: true
+
+  /@azure/core-util@1.4.0:
+    resolution: {integrity: sha512-eGAyJpm3skVQoLiRqm/xPa+SXi/NPDdSHMxbRAz2lSprd+Zs+qrpQGQQ2VQ3Nttu+nSZR4XoYQC71LbEI7jsig==}
+    engines: {node: '>=14.0.0'}
+    dependencies:
+      '@azure/abort-controller': 1.1.0
+      tslib: 2.6.1
+    dev: true
+
+  /@azure/logger@1.0.4:
+    resolution: {integrity: sha512-ustrPY8MryhloQj7OWGe+HrYx+aoiOxzbXTtgblbV3xwCqpzUK36phH3XNHQKj3EPonyFUuDTfR3qFhTEAuZEg==}
+    engines: {node: '>=14.0.0'}
+    dependencies:
+      tslib: 2.6.1
+    dev: true
+
+  /@azure/openai@1.0.0-beta.4:
+    resolution: {integrity: sha512-C6NXL/PLPBoVlc5MuhBWGDeJ0OifswP5xwEqbMb2jcrOmRSaGQZffLTDV7D06Jlc8ZJ+qjOBxHHJqLEd2kqS7w==}
+    engines: {node: '>=14.0.0'}
+    dependencies:
+      '@azure-rest/core-client': 1.1.4
+      '@azure/core-auth': 1.5.0
+      '@azure/core-lro': 2.5.4
+      '@azure/core-rest-pipeline': 1.12.0
+      '@azure/logger': 1.0.4
+      tslib: 2.6.1
+    transitivePeerDependencies:
+      - supports-color
+    dev: true
+
   /@babel/code-frame@7.12.11:
     resolution: {integrity: sha512-Zt1yodBx1UcyiePMSkWnU4hPqhwq7hGi2nFL1LeA3EUl+q2LQx16MISgJ0+z7dnmgvP9QtIleuETGOiOH1RcIw==}
     dependencies:
@@ -610,7 +709,7 @@ packages:
       '@babel/helper-replace-supers': 7.22.5
       '@babel/helper-skip-transparent-expression-wrappers': 7.22.5
       '@babel/helper-split-export-declaration': 7.22.5
-      semver: 6.3.0
+      semver: 6.3.1
     transitivePeerDependencies:
       - supports-color
 
@@ -641,7 +740,7 @@ packages:
       '@babel/core': 7.22.5
       '@babel/helper-annotate-as-pure': 7.22.5
       regexpu-core: 5.3.2
-      semver: 6.3.0
+      semver: 6.3.1
 
   /@babel/helper-define-polyfill-provider@0.4.0(@babel/core@7.22.5):
     resolution: {integrity: sha512-RnanLx5ETe6aybRi1cO/edaRH+bNYWaryCEmjDDYyNr4wnSzyOp8T0dWipmqVHKEY3AbVKUom50AKSlj1zmKbg==}
@@ -654,7 +753,7 @@ packages:
       debug: 4.3.4(supports-color@6.1.0)
       lodash.debounce: 4.0.8
       resolve: 1.22.2
-      semver: 6.3.0
+      semver: 6.3.1
     transitivePeerDependencies:
       - supports-color
 
@@ -3111,6 +3210,11 @@ packages:
     engines: {node: '>= 6'}
     dev: false
 
+  /@tootallnate/once@2.0.0:
+    resolution: {integrity: sha512-XCuKFP5PS55gnMVu3dty8KPatLqUoy/ZYzDzAGCQ8JNFCkLXzmI7vNHCR+XpbZaMWQK/vQubr7PkYq8g470J/A==}
+    engines: {node: '>= 10'}
+    dev: true
+
   /@trysound/sax@0.2.0:
     resolution: {integrity: sha512-L7z9BgrNEcYyUYtF+HaEfiS5ebkh9jXqbszz7pC0hRBPaatV0XjSD3+eHrpqFemQfgwiFF0QPIarnIihIDn7OA==}
     engines: {node: '>=10.13.0'}
@@ -5104,7 +5208,6 @@ packages:
       debug: 4.3.4(supports-color@6.1.0)
     transitivePeerDependencies:
       - supports-color
-    dev: false
 
   /agentkeepalive@2.2.0:
     resolution: {integrity: sha512-TnB6ziK363p7lR8QpeLC8aMr8EGYBKZTpgzQLfqTs3bR0Oo5VbKdwKf8h0dSzsYrB7lSCgfJnMZKqShvlq5Oyg==}
@@ -5693,7 +5796,7 @@ packages:
       '@babel/compat-data': 7.22.5
       '@babel/core': 7.22.5
       '@babel/helper-define-polyfill-provider': 0.4.0(@babel/core@7.22.5)
-      semver: 6.3.0
+      semver: 6.3.1
     transitivePeerDependencies:
       - supports-color
 
@@ -9635,6 +9738,15 @@ packages:
       mime-types: 2.1.35
     dev: false
 
+  /form-data@4.0.0:
+    resolution: {integrity: sha512-ETEklSGi5t0QMZuiXoA/Q6vcnxcLQP5vdugSpuAyi6SVGi2clPPp+xgEhuMaHC+zGgn31Kd235W35f7Hykkaww==}
+    engines: {node: '>= 6'}
+    dependencies:
+      asynckit: 0.4.0
+      combined-stream: 1.0.8
+      mime-types: 2.1.35
+    dev: true
+
   /forwarded@0.2.0:
     resolution: {integrity: sha512-buRG0fpBtRHSTCOASe6hD258tEubFoRLb4ZNA6NxMVHNw2gOcwHo9wyablzMzOA5z9xA9L1KNjk/Nt6MT9aYow==}
     engines: {node: '>= 0.6'}
@@ -9708,7 +9820,7 @@ packages:
     resolution: {integrity: sha512-oWb1Z6mkHIskLzEJ/XWX0srkpkTQ7vaopMQkyaEIoq0fmtFVxOthb8cCxeT+p3ynTdkk/RZwbgG4brR5BeWECw==}
     engines: {node: '>= 4.0'}
     os: [darwin]
-    deprecated: The v1 package contains DANGEROUS / INSECURE binaries. Upgrade to safe fsevents v2
+    deprecated: fsevents 1 will break on node v14+ and could be using insecure binaries. Upgrade to fsevents 2.
     requiresBuild: true
     dependencies:
       bindings: 1.5.0
@@ -10162,7 +10274,7 @@ packages:
     dev: true
 
   /hash-sum@1.0.2:
-    resolution: {integrity: sha512-fUs4B4L+mlt8/XAtSOGMUO1TXmAelItBPtJG7CyHJfYTdDjwisntGO2JQz7oUsatOY9o68+57eziUVNw/mRHmA==}
+    resolution: {integrity: sha1-M7QHd3VMZDJXPBIMw4CLvRDUfwQ=}
     dev: true
 
   /hash-sum@2.0.0:
@@ -10364,6 +10476,17 @@ packages:
       - supports-color
     dev: false
 
+  /http-proxy-agent@5.0.0:
+    resolution: {integrity: sha512-n2hY8YdoRE1i7r6M0w9DIw5GgZN0G25P8zLCRQ8rjXtTU3vsNFBI/vWK/UIeE6g5MUUz6avwAPXmL6Fy9D/90w==}
+    engines: {node: '>= 6'}
+    dependencies:
+      '@tootallnate/once': 2.0.0
+      agent-base: 6.0.2
+      debug: 4.3.4(supports-color@6.1.0)
+    transitivePeerDependencies:
+      - supports-color
+    dev: true
+
   /http-proxy-middleware@0.19.1(debug@4.3.4)(supports-color@6.1.0):
     resolution: {integrity: sha512-yHYTgWMQO8VvwNS22eLLloAkvungsKdKTLO8AJlftYIKNfJr3GK3zK0ZCfzDDGUBttdGc8xFy1mCitvNKQtC3Q==}
     engines: {node: '>=4.0.0'}
@@ -10440,7 +10563,6 @@ packages:
       debug: 4.3.4(supports-color@6.1.0)
     transitivePeerDependencies:
       - supports-color
-    dev: false
 
   /human-signals@1.1.1:
     resolution: {integrity: sha512-SEQu7vl8KjNL2eoGBLF3+wAjpsNfA9XMlXAYj/3EdaNfAlxKthD1xjEQfGOUhllCGGJVNY34bRr6lPINhNjyZw==}
@@ -10518,7 +10640,7 @@ packages:
     engines: {node: '>= 4'}
 
   /image-size@0.5.5:
-    resolution: {integrity: sha512-6TDAlDPZxUFCv+fuOkIoXT/V/f3Qbq8e37p+YOiYrUv3v9cc3/6x78VdfPgFVaB9dZYeLUfKgHRebpkm/oP2VQ==}
+    resolution: {integrity: sha1-Cd/Uq50g4p6xw+gLiZA3jfnjy5w=}
     engines: {node: '>=0.10.0'}
     hasBin: true
     requiresBuild: true
@@ -11130,7 +11252,7 @@ packages:
       '@babel/parser': 7.22.5
       '@istanbuljs/schema': 0.1.3
       istanbul-lib-coverage: 3.2.0
-      semver: 6.3.0
+      semver: 6.3.1
     transitivePeerDependencies:
       - supports-color
     dev: false
@@ -12074,7 +12196,7 @@ packages:
     dev: false
 
   /loader-utils@0.2.17:
-    resolution: {integrity: sha512-tiv66G0SmiOx+pLWMtGEkfSEejxvb6N6uRrQjfWJIT79W9GMpgKeCAmm9aVBKtd4WEgntciI8CsGqjpDoCWJug==}
+    resolution: {integrity: sha1-+G5jdNQyBabmxg6RlvF8Apm/s0g=}
     dependencies:
       big.js: 3.2.0
       emojis-list: 2.1.0
@@ -13218,7 +13340,7 @@ packages:
       got: 9.6.0
       registry-auth-token: 4.2.2
       registry-url: 5.1.0
-      semver: 6.3.0
+      semver: 6.3.1
     dev: true
 
   /pako@1.0.11:
@@ -15719,7 +15841,6 @@ packages:
   /semver@6.3.1:
     resolution: {integrity: sha512-BR7VvDCVHO+q2xBEWskxS6DJE1qRnb7DxzUrogb71CWoSficBxYsiAGd+Kl0mmq/MprG9yArRkyrQxTO6XjMzA==}
     hasBin: true
-    dev: false
 
   /semver@7.5.3:
     resolution: {integrity: sha512-QBlUtyVk/5EeHbi7X0fw6liDZc7BBmEaSYn01fMU1OUYbf6GPsbTtd8WmnqbI20SeycoHSeiybkE/q1Q+qlThQ==}
