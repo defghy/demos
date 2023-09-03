@@ -195,6 +195,7 @@ export default defineComponent({
             height: 500, // Number，必须，图的高度
             modes: {
               default: [
+                'drag-canvas',
                 {
                   type: 'test-behavior',
                 },
@@ -205,6 +206,10 @@ export default defineComponent({
 
           graph.data(data); // 读取 Step 2 中的数据源到图上
           graph.render(); // 渲染图
+
+          graph.on('mouseup', function(e) {
+            console.log(e);
+          });
 
           window.graph = graph;
         });
