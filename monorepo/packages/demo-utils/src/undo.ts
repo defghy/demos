@@ -6,6 +6,7 @@ let data = {
     nodes: [{ id: 1, name: '节点1' }, { id: 2, name: '节点2' }],
     edges: [{ source: 1, target: 2 }],
 };
+const bak = data;
 
 const snapData: any = {
     index: -1,
@@ -20,6 +21,7 @@ const createSnap = function(state: any, change: any) {
         snapData.list.push({
             redo: redoPatch,
             undo: undoPatch,
+            type: ''
         });
     });
 };

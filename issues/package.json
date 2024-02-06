@@ -1,0 +1,16 @@
+{
+  "name": "@github/issues",
+  "version": "1.0.0",
+  "private": true,
+  "description": "",
+  "scripts": {
+    "ready": "npm install pnpm@8 rimraf@latest -g"
+  },
+  "peerDependencies": {
+    "pnpm": "^8.11.0",
+    "rimraf": "^5.0.5"
+  },
+  "engines": {
+    "node": ">= 16"
+  }
+}

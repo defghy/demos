@@ -8,28 +8,23 @@
 
 <style> 
 body, html {
-    height: 100%;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
+
 .container {
-    height: 100%;
-    overflow-y: auto;
-    display: flex;
-    flex-direction: column;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
-.header {
-  background-color: #555;
-  color: #fff;
-  padding: 20px 10px; 
-}
-.body {
-  padding: 20px 10px;
-  font-size: 40px;
-  flex: 1;
-}
-.footer {
-  background-color: #555;
-  color: #fff;
-  padding: 20px 10px;
+
+img {
+  object-fit: contain;
+  object-position: center;
+  width: 100%;
+  height: 100%;
 }
 
 </style>
@@ -37,25 +32,11 @@ body, html {
 </head>
 
 <body>
-
+<div class="container">
+  <img style="display: block;" src="https://img2.baidu.com/it/u=3853345508,384760633&amp;fm=253&amp;fmt=auto&amp;app=120&amp;f=JPEG?w=800&amp;h=1200">
+</div>
+  
  
-
-    <div class="container">
-        <div class="header">header</div>
-        <div class="body">
-          <p>阿斯顿发斯蒂芬</p>
-          <p>阿斯顿发斯蒂芬</p>
-          <p>阿斯顿发斯蒂芬</p>
-          <p>阿斯顿发斯蒂芬</p>
-          <p>阿斯顿发斯蒂芬</p>
-
-
-        </div>
-        <div class="footer">footer</div>
-      </div>
-
- 
-
 </body>
 
 </html>
