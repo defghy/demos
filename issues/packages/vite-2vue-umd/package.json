@@ -1,0 +1,22 @@
+{
+  "name": "@aweb/config",
+  "version": "2.1.0",
+  "private": true,
+  "scripts": {
+    "vite": "vite",
+    "vite:prod": "vite build"
+  },
+  "dependencies": {
+    "vue-konva": "^2.1.7",
+    "konva": "^8.2.3",
+    "vue": "^2.7.16"
+  },
+  "devDependencies": {
+    "typescript": "~4.5.5",
+    "vue-template-compiler": "^2.7.16",
+    "vite": "^5.0.10",
+    "@vitejs/plugin-basic-ssl": "^1.0.2",
+    "@vitejs/plugin-vue2": "^2.3.1",
+    "@vitejs/plugin-vue2-jsx": "^1.1.1"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "name": "@demo/node",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {},
+  "devDependencies": {
+    "@azure/openai": "1.0.0-beta.4"
+  }
+}

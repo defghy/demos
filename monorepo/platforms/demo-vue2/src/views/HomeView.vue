@@ -9,9 +9,13 @@
 import Vue from 'vue';
 import { PropType, defineComponent, reactive, ref, toRefs, watch, provide, inject, computed, } from '@vue/composition-api';
 
+import { undo, redo } from '@demo/utils';
 
 import CountHandler from '@/components/CountHandler.vue';
 import { useRootActions, useRootState } from '@/store';
+
+undo;
+redo;
 
 export default defineComponent({
     name: 'Vue2Home',

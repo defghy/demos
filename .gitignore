@@ -25,13 +25,14 @@ yarn-error.log*
 *.sw*
 **/*/mock
 
-# puzzle-server
+# demo
 db-sqlite
 logs
 run
 lerna-debug.log
 appveyor.yml
 .travis.yml
+secret-key.js
 
 package-lock.json
 

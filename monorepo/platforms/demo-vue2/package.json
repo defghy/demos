@@ -1,5 +1,5 @@
 {
-  "name": "demo-vue2",
+  "name": "@demo/vue2",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -12,6 +12,7 @@
     "vue": "^2.6.14",
     "vue-router": "^3.5.1",
     "vuex": "^3.6.2",
+    "@demo/utils": "^0.1.0",
     "@vue/composition-api": "^1.7.1",
     "vuex-composition-helpers": "^1.1.2"
   },
@@ -30,6 +31,7 @@
     "less": "^4.0.0",
     "less-loader": "^7.3.0",
     "typescript": "~4.5.5",
+    "@antv/g6": "4.6.15",
     "vue-template-compiler": "^2.6.14"
   }
 }
