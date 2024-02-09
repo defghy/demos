@@ -1,73 +1,37 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
+ 
 <head>
-
-<meta charset="utf-8"> 
-
-<style> 
-
-div{
-
-    margin:20px 10px;
-
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  
+  <!-- 下面这段CSS代码定义了range控件的样式 -->
+  <style>
+input[type="range"]::-webkit-slider-runnable-track {
+  background: yellow;
 }
 
-.div1
-
-{
-
-  column-count: 3;
-    column-gap: 20px;
-    column-rule: solid #ddd 1px;
-
+input[type="range"]::-moz-range-track {
+  background: yellow;
 }
 
-.div2
-
-{
-
-    column-count:4;
-
-    column-width:100px;
-
-     
-
-    -moz-column-count:4; /* Firefox */
-
-    -moz-column-width:100px; /* Firefox */
-
-     
-
-    -webkit-column-count:4; /* Safari and Chrome */
-
-    -webkit-column-width:100px; /* Safari and Chrome */
-
+input[type="range"]::-webkit-slider-thumb {
+  background: blue;
 }
 
-</style>
-
+作者：蔡文前
+链接：https://www.zhihu.com/question/581230635/answer/2874407475
+来源：知乎
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+  </style>
 </head>
-
+ 
 <body>
-
+  <!-- 在页面上添加一个range控件-->
+  <input type="range" min="0" max="100" value="50">
  
-
-<div class="div1">
-
-当我年轻的时候，我梦想改变这个世界；当我成熟以后，我发现我不能够改变这个世界，我将目光缩短了些，决定只改变我的国家；当我进入暮年以后，我发现我不能够改变我们的国家，我的最后愿望仅仅是改变一下我的家庭，但是，这也不可能。当我现在躺在床上，行将就木时，我突然意识到：如果一开始我仅仅去改变我自己，然后，我可能改变我的家庭；在家人的帮助和鼓励下，我可能为国家做一些事情；然后，谁知道呢?我甚至可能改变这个世界。
-
-</div>
-
-<div class="div2">
-
-当我年轻的时候，我梦想改变这个世界；当我成熟以后，我发现我不能够改变这个世界，我将目光缩短了些，决定只改变我的国家；当我进入暮年以后，我发现我不能够改变我们的国家，我的最后愿望仅仅是改变一下我的家庭，但是，这也不可能。当我现在躺在床上，行将就木时，我突然意识到：如果一开始我仅仅去改变我自己，然后，我可能改变我的家庭；在家人的帮助和鼓励下，我可能为国家做一些事情；然后，谁知道呢?我甚至可能改变这个世界。
-
-</div>
-
- 
-
 </body>
-
+ 
 </html>

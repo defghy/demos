@@ -1,48 +1,35 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="pragma" content="no-cache">
-  <!-- <meta name="referrer" content="no-referrer"> -->
-  <title>测试页面</title>
-</head>
-<style type="text/css">
-.color {
-  fill: var(--color);
-}
-</style>
-<body>
-<svg width="1" height="1" id="svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-  <defs>
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" 
+"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" version="1.1"
+xmlns="http://www.w3.org/2000/svg">
+    <path  id="circle" d="
+        M 100, 100
+        m -75, 0
+        a75,75 0 1,0 150,0
+        a75,75 0 1,0 -150,0"
+    style="stroke:#000000;fill:#f0f0f5"/>
+ 
+ 
+     <path  id="left" d="
+        M25, 100
+       L100,100"
+    style="stroke:#00ffff;"/>
+ 
+ 
+    <path id="right" d="
+        M100, 100
+       L175,100"
+    style="stroke:#ff00ff;"/>
+ 
+ 
+    <path id="top" d="
+        M100, 100
+       L100,25"
+    style="stroke:#ffff66;"/>
     
-    <g id="balloon">
-      <path class="color" d="M30.32,85.27l2.6-3.67,2.18,3.67a3.09,3.09,0,0,1-2.39,1A2.63,2.63,0,0,1,30.32,85.27Z"/>
-      <ellipse class="color" cx="32.92" cy="41.72" rx="32.92" ry="41.72"/>
-      <ellipse cx="50.5" cy="20.4" rx="5.23" ry="13.48" transform="translate(-3 30.59) rotate(-32.78)" style="fill: #fff;opacity: 0.4"/>
-    </g>
-    <g id="pop">
-        <path class="color" d="M10.4,1.06s23.25-3.73,31.65,2.8S52,21,52,21s-3.73-11-9.33-10.5-11.47,4.89-11.47,4.89,5.65-11.52,0-11.52-16.55.63-16.55.63Z" />
-        <path class="color" d="M31.21,29.08s13,4.36,15.51,0,6.85,0,6.85,0L45.79,46.51S34.84,44.57,33,36.83Z"/>
-        <path class="color" d="M14.86,6.71l-4,15.14,5.3,3.83s-5.85,3.84-1.43,7.81,13,3.27,13,3.27S-.89,43.33,0,30.93,14.86,6.71,14.86,6.71Z" />
-      </g>
-    <g id="confetti_1">
-      <polygon class="color" points="0 6.23 12.76 0 17.43 6.23 9.96 16.81 0 6.23"/>
-    </g>
-    <g id="confetti_2">
-      <polygon class="color" points="0 21.79 10.53 0 15.2 2.18 4.93 25.21 0 21.79"/>
-    </g>
-  </defs>
-
+    <path id="bottom" d="
+        M100, 100
+       L100,175"
+    style="stroke:#ccccff;"/>
 </svg>
-<div id="content">
-  <a href="https://greensock.com" target="_blank"><img class="gsap-3-logo" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-3-logo.svg" width="200" /></a>
-</div>
-<svg id="behind" width="2" height="2" style="overflow: visible;" >
-  <use xlink:href="#balloon" style="--color: #f0f; transform: translate(100px, -69px);" />
-
-  <use xlink:href="#pop" style="--color: #f0f;" />
-  <use xlink:href="#confetti_1" style="--color: #f0f; transform: translate(100px, 100px);"  />
-  <use xlink:href="#confetti_2" style="--color: #f0f; transform: translate(100px, 300px);"  />
-</svg>
-</body>
-</html>

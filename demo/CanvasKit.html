@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/canvaskit-wasm@0.25.0/bin/canvaskit.js"></script>
+</head>
+<body>
+  <canvas id="canvas" width="500" height="500"></canvas>
+
+  <script>
+    const canvas = document.getElementById('canvas');
+    const drawCircle = async function() {
+      const CanvasKit =   await CanvasKitInit();
+      const ctx = CanvasKit.MakeCanvasSurface(canvas);
+
+      // 设置颜色
+      const paint = new CanvasKit.Paint();
+      paint.setColor(CanvasKit.RED);
+      paint.setAntiAlias(true);
+
+      // 绘制圆形
+      const centerX = 250;
+      const centerY = 250;
+      const radius = 100; 
+      ctx.getCanvas().drawCircle(centerX, centerY, radius, paint);
+
+      // 渲染画布
+      ctx.flush();
+    };
+
+    drawCircle();
+
+
+  </script>
+</body>
+</html>
