@@ -1,23 +1,27 @@
 {
-  "name": "demos",
+  "name": "@aweb/world",
   "version": "1.0.0",
+  "private": true,
   "description": "",
-  "main": "index.js",
   "scripts": {
-    "start": "http-server ./ -p 9123"
+    "ready": "npm install pnpm@8 rimraf@latest -g && npm run bootstrap",
+    "bootstrap": "pnpm install",
+    "clean": "pnpm --recursive exec -- npx rimraf node_modules && npx rimraf node_modules",
+    "prepare": "husky install"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/defghy/demos.git"
+  "peerDependencies": {
+    "pnpm": "^8.11.0",
+    "rimraf": "3.0.2"
   },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/defghy/demos/issues"
+  "devDependencies": {
+    "@types/wicg-file-system-access": "",
+    "husky": "^8.0.3",
+    "execa": "^8.0.1",
+    "axios": "^1.6.2",
+    "cross-env": "^7.0.3"
   },
-  "homepage": "https://github.com/defghy/demos#readme",
-  "dependencies": {
-    "http-server": "^0.12.3",
-    "ogl": "0.0.76"
-  }
+  "engines": {
+    "node": ">= 16"
+  },
+  "pnpm": {}
 }

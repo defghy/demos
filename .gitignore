@@ -1,44 +1,26 @@
 .DS_Store
 node_modules
-dist
+/dist
+**/*/src/tmp
+**/*/dist
+**/*/dist_total
 
-tests/e2e/reports/
-selenium-debug.log
 
 # local env files
 .env.local
 .env.*.local
-**/*/config.local.js
 
 # Log files
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+pnpm-debug.log*
 
 # Editor directories and files
 .idea
-.vscode
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
-*.sw*
-**/*/mock
-
-# demo
-db-sqlite
-logs
-run
-lerna-debug.log
-appveyor.yml
-.travis.yml
-secret-key.js
-
-package-lock.json
-
-# puzzle-docs
-.temp
-
-# npm cache
-/npmCache
-.experiments
+*.sw?
+coverage

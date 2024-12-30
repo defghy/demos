@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="pragma" content="no-cache">
+  <!-- <meta name="referrer" content="no-referrer"> -->
+  <title>组合键up不响应？</title>
+  <style type="text/css">
+
+.code {
+  width: 400px;
+  height: 600px;
+  border: 1px solid #ddd;
+  overflow-y: auto;
+}
+
+  </style>
+</head>
+<body>
+  <script>
+    document.body.onkeyup = function(evt) {
+        console.log('up', evt.key);
+    }
+    document.body.onkeydown = function(evt) {
+        console.log('down', evt.key);
+    }
+  </script>
+</body>
+</html>
