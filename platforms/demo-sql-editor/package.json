@@ -1,0 +1,33 @@
+{
+  "name": "@demo/sql-editor",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "vite": "vite",
+    "build": "vue-tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "pinia": "^2.1.7",
+    "vue": "^3.3.11",
+    "vue-router": "^4.2.5",
+    "vue-json-pretty": "^2.4.0",
+    "vue-dd": "^1.6.5",
+    "codemirror": "^6.0.1",
+    "@codemirror/view": "^6.36.1",
+    "@codemirror/lang-sql": "^6.8.0",
+    "@codemirror/autocomplete": "^6.18.4",
+    "@codemirror/language": "^6.10.8",
+    "@codemirror/state": "^6.5.0",
+    "@codemirror/lint": "^6.8.4",
+    "@kwange/vue-sql-editor": "^1.1.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.1.0",
+    "@vitejs/plugin-vue-jsx": "^3.1.0",
+    "typescript": "^5.0.2",
+    "vite": "^4.3.9",
+    "vue-tsc": "^1.4.2"
+  }
+}
