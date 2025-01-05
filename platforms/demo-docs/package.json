@@ -8,8 +8,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@demo/ui": "0.1.0",
-    "@demo/utils": "0.1.0"
+    "@demo/ui": "workspace:*",
+    "@demo/utils": "workspace:*"
   },
   "devDependencies": {
     "vuepress": "^1.6.0"

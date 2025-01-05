@@ -1,0 +1,17 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "resolveJsonModule": true,
+    "paths": {
+      "@/*": ["src/*"],
+    },
+    "types": ["vite/client"],
+  },
+  "vueCompilerOptions": {
+    "target": 2.7,
+  },
+  "files": ["../../packages/aweb-ui/global.d.ts"],
+  "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.vue", "tests/**/*.ts", "../../packages/aweb-test/plugins/*.ts"],
+  "exclude": ["node_modules"],
+}

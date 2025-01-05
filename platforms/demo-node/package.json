@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {},
+  "dependencies": {
+    "libnpmsearch": "^9.0.0"
+  },
   "devDependencies": {
     "@azure/openai": "1.0.0-beta.4"
   }

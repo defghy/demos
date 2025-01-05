@@ -3,6 +3,7 @@ packages:
   - 'packages/*'
   - 'platforms/*'
   - 'htmls/*'
+  - 'bugs/*'
   # exclude packages that are inside test directories
   - '!**/test/**'
   - '!**/examples/**'
