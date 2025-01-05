@@ -1,3 +1,15 @@
 {
-  "configurations": []
+  "configurations": [
+    {
+      "type": "node-terminal",
+      "name": "vitest fetch cors",
+      "request": "launch",
+      "command": "npm run test2",
+      "autoAttachChildProcesses": true,
+      "cwd": "${workspaceFolder}/bugs/vitest2-fetch-cors",
+      "env": {
+        "PROJECT_PATH": "${workspaceFolder}/bugs/vitest2-fetch-cors"
+      }
+    }
+  ]
 }

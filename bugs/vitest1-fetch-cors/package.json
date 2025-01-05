@@ -3,13 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "test2": "vitest run test2"
+    "test1": "vitest run test1"
   },
   "dependencies": {},
   "devDependencies": {
     "vite": "^5.4.11",
     "happy-dom": "^14.11.1",
-    "vitest": "2.1.8"
+    "vitest": "npm:vitest@1.6.0"
   },
   "browserslist": [
     "> 1%",
