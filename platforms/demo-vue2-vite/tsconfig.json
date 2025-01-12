@@ -1,0 +1,16 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    },
+    // 在.tsx文件里支持JSX
+    "jsx": "preserve"
+  },
+  "vueCompilerOptions": {
+    "target": 2.7
+  },
+  "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.vue", "src/**/*.d.ts", "src/**/*.react.tsx", "tests/**/*.ts"],
+  "exclude": ["node_modules/**"]
+}

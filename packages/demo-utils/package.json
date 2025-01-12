@@ -5,7 +5,9 @@
   "main": "src/index.ts",
   "scripts": {},
   "dependencies": {
-    "immer": "^10.0.2"
+    "immer": "^10.0.2",
+    "vue": "^2.7.16",
+    "vue-router": "^3.6.5"
   },
   "eslintConfig": {
     "root": true,

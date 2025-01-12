@@ -1,0 +1,42 @@
+{
+  "name": "@aweb/demo-vue2.7-vite",
+  "private": true,
+  "version": "0.1.0",
+  "scripts": {
+    "vite": "vite",
+    "build": "vite build"
+  },
+  "dependencies": {
+    "@demo/utils": "workspace:*",
+    "lodash-es": "^4.17.21",
+    "uuid": "^9.0.0",
+    "vue": "^2.7.16",
+    "vue-router": "^3.6.5",
+    "pinia": "^2.1.7"
+  },
+  "devDependencies": {
+    "@types/lodash-es": "^4.17.3",
+    "@types/uuid": "^9.0.2",
+    "browserslist": "^4.21.9",
+    "caniuse-lite": "^1.0.30001507",
+    "element-ui": "^2.15.14",
+    "less": "^4.0.0",
+    "prettier": "^2.4.1",
+    "tslib": "^2.6.2",
+    "vue-template-compiler": "^2.7.16",
+    "vite": "^5.4.11",
+    "@vitejs/plugin-vue2": "^2.3.1",
+    "@vitejs/plugin-basic-ssl": "^1.0.2",
+    "@vitejs/plugin-vue2-jsx": "^1.1.1",
+    "vite-plugin-eslint": "^1.8.1",
+    "vitest": "^2.1.8",
+    "unplugin-vue-components": "^0.27.0",
+    "unplugin-auto-import": "^0.17.6",
+    "typescript": "^5.3.3"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}
