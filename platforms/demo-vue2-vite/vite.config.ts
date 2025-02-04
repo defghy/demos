@@ -6,6 +6,7 @@ import pluginBasicSsl from '@vitejs/plugin-basic-ssl'
 import unpluginComponents from 'unplugin-vue-components/vite'
 import unpluginImport from 'unplugin-auto-import/vite'
 import { ElementUiResolver } from 'unplugin-vue-components/resolvers'
+import federation from "@originjs/vite-plugin-federation";
 
 const envKeys = ['NODE_ENV', 'VUE_APP_API_BASE_URL', 'VUE_APP_ENV']
 
@@ -32,6 +33,12 @@ export default ({ mode }) => {
         resolvers: [ElementUiResolver()],
       }),
       pluginBasicSsl(),
+      federation({
+        name: 'host-app',
+        remotes: {
+          vue3App: 'http://localhost:5001/assets/remoteEntry.js'
+        }
+      }),
     ].filter(f => !!f),
     define: {
       'process.env': {

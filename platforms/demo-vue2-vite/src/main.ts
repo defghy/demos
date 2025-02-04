@@ -14,3 +14,9 @@ new Vue({
     console.error(err)
   },
 }).$mount('#app')
+
+window.test = async function() {
+  const res = await import("vue3App/views");
+  return res;
+}
+
