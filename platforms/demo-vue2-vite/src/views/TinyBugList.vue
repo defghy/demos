@@ -24,7 +24,7 @@ export default defineComponent({
       radioVal: '1',
     })
 
-    return { handleSSO, ...toRefs(state) }
+    return { ...toRefs(state) }
   },
 })
 </script>
