@@ -32,7 +32,7 @@ export default ({ mode }) => {
         dirs: [],
         resolvers: [ElementUiResolver(), TinyVueSingleResolver],
       }),
-      pluginBasicSsl(),
+      // pluginBasicSsl(),
     ].filter(f => !!f),
     define: {
       'process.env': {
