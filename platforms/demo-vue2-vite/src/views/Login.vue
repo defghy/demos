@@ -6,19 +6,22 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
+import { defineComponent, reactive, toRefs } from 'vue'
 
 import { useContext } from '@demo/utils'
 
 export default defineComponent({
   setup() {
+    const state = reactive({
+      hello: 'helloWorld',
+    })
     const { $router } = useContext()
 
     const handleSSO = function () {
       console.log('login')
     }
 
-    return { handleSSO }
+    return { handleSSO, ...toRefs(state) }
   },
 })
 </script>

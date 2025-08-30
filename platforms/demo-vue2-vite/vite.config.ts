@@ -6,6 +6,7 @@ import pluginBasicSsl from '@vitejs/plugin-basic-ssl'
 import unpluginComponents from 'unplugin-vue-components/vite'
 import unpluginImport from 'unplugin-auto-import/vite'
 import { ElementUiResolver } from 'unplugin-vue-components/resolvers'
+import { TinyVueSingleResolver } from '@opentiny/unplugin-tiny-vue'
 
 const envKeys = ['NODE_ENV', 'VUE_APP_API_BASE_URL', 'VUE_APP_ENV']
 
@@ -24,12 +25,12 @@ export default ({ mode }) => {
       }),
       unpluginImport({
         dts: 'src/tmp/import.d.ts',
-        resolvers: [ElementUiResolver()],
+        resolvers: [ElementUiResolver(), TinyVueSingleResolver],
       }),
       unpluginComponents({
         dts: 'src/tmp/components.d.ts',
         dirs: [],
-        resolvers: [ElementUiResolver()],
+        resolvers: [ElementUiResolver(), TinyVueSingleResolver],
       }),
       pluginBasicSsl(),
     ].filter(f => !!f),
@@ -40,6 +41,7 @@ export default ({ mode }) => {
           return acc
         }, {}),
         VITE_ENV: true,
+        TINY_MODE: 'pc',
       },
     },
     server: {
