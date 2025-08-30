@@ -1,51 +1,56 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
+    <img alt="Vue logo" src="../assets/logo.png" />
     <CountHandler :count="form.count" @update="updateCount" />
   </div>
 </template>
 
 <script lang="ts">
-import Vue from 'vue';
-import { PropType, defineComponent, reactive, ref, toRefs, watch, provide, inject, computed, } from '@vue/composition-api';
+import Vue from 'vue'
+import {
+  PropType,
+  defineComponent,
+  reactive,
+  ref,
+  toRefs,
+  watch,
+  provide,
+  inject,
+  computed,
+} from '@vue/composition-api'
 
-import { undo, redo } from '@demo/utils';
-
-import CountHandler from '@/components/CountHandler.vue';
-import { useRootActions, useRootState } from '@/store';
-
-undo;
-redo;
+import CountHandler from '@/components/CountHandler.vue'
+import { useRootActions, useRootState } from '@/store'
 
 export default defineComponent({
-    name: 'Vue2Home',
-    components: {
-      CountHandler
-    },
-    props: {},
-    setup() {
-        const state = reactive({
-            form: {
-                count: 0,
-            },
-        });
+  name: 'Vue2Home',
+  components: {
+    CountHandler,
+  },
+  props: {},
+  setup() {
+    const state = reactive({
+      form: {
+        count: 0,
+      },
+    })
 
-        provide('useScene', 'Home');
+    provide('useScene', 'Home')
 
-        const updateCount = function (val: number) {
-          state.form.count = val;
-        };
+    const updateCount = function (val: number) {
+      state.form.count = val
+    }
 
-        // vuex
-        const { updateUser } = useRootActions(['updateUser']);
-        updateUser('huyu');
-        const { userName } = useRootState(['userName']);
-        console.log(userName.value);
+    // vuex
+    const { updateUser } = useRootActions(['updateUser'])
+    updateUser('huyu')
+    const { userName } = useRootState(['userName'])
+    console.log(userName.value)
 
-        return {
-            ...toRefs(state),
-            updateCount,
-        };
-    },
-});
+    return {
+      ...toRefs(state),
+      updateCount,
+    }
+  },
+})
 </script>
