@@ -18,6 +18,11 @@ const routes: RouteConfig[] = [
     name: 'tinyBugs',
     component: () => import('@/views/TinyBugList.vue'),
   },
+  {
+    path: '/konvaPath',
+    name: 'konvaPath',
+    component: () => import('@/views/KonvaPath.vue'),
+  },
 ]
 
 const router = new VueRouter({

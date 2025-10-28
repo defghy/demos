@@ -1,0 +1,10 @@
+{
+  "name": "@demo/react",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {},
+  "dependencies": {
+    "react-bezier-curve-editor": "^2.1.0"
+  },
+  "devDependencies": {}
+}
