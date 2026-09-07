@@ -1,0 +1,11 @@
+{
+  "rewrites": [
+    { "source": "/api/getUserInfo", "destination": "/api/userRegistry" },
+    { "source": "/api/updateUserInfo", "destination": "/api/userRegistry" }
+  ],
+  "functions": {
+    "api/**/*.mjs": {
+      "runtime": "@vercel/node@5.1.15"
+    }
+  }
+}

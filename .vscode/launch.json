@@ -10,6 +10,17 @@
       "env": {
         "PROJECT_PATH": "${workspaceFolder}/bugs/vitest2-fetch-cors"
       }
+    },
+    {
+      "type": "node-terminal",
+      "name": "vercel vite",
+      "request": "launch",
+      "command": "npm run dev",
+      "autoAttachChildProcesses": true,
+      "cwd": "${workspaceFolder}/platforms/demo-serverless-vercel",
+      "env": {
+        "PROJECT_PATH": "${workspaceFolder}/platforms/demo-serverless-vercel"
+      }
     }
   ]
 }
