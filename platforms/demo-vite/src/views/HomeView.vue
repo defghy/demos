@@ -2,6 +2,7 @@
 import { RouterLink } from 'vue-router'
 
 const pages = [
+  { title: 'HTML in Canvas 特效', to: { name: 'html-in-canvas' } },
   { title: 'aleData', to: { name: 'aleData' } }
 ]
 </script>

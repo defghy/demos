@@ -5,6 +5,11 @@ const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
+      path: '/html-in-canvas',
+      name: 'html-in-canvas',
+      component: () => import('../views/html-in-canvas/index.vue')
+    },
+    {
       path: '/',
       name: 'home',
       component: HomeView
