@@ -1,15 +1,46 @@
 <script setup lang="ts">
-import HelloWorld from '../components/HelloWorld.vue'
+import { RouterLink } from 'vue-router'
+
+const pages = [
+  { title: 'aleData', to: { name: 'aleData' } }
+]
 </script>
 
 <template>
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="@/assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
-  </div>
-  <HelloWorld msg="Vite + Vue" />
+  <main class="home">
+    <h1 class="home-title">页面目录</h1>
+    <nav aria-label="页面目录">
+      <ul class="page-list">
+        <li v-for="page in pages" :key="page.to.name">
+          <RouterLink class="page-link" :to="page.to">
+            {{ page.title }}
+          </RouterLink>
+        </li>
+      </ul>
+    </nav>
+  </main>
 </template>
+
+<style scoped>
+.home {
+  box-sizing: border-box;
+  height: 100%;
+  overflow: auto;
+  padding: 24px;
+}
+
+.home-title {
+  margin: 0 0 24px;
+  font-size: 24px;
+}
+
+.page-list {
+  margin: 0;
+  padding-left: 24px;
+}
+
+.page-link {
+  display: inline-block;
+  padding: 8px 0;
+}
+</style>
