@@ -18,6 +18,7 @@
     "vue-dd": "^1.6.5"
   },
   "devDependencies": {
+    "@types/dom-html-in-canvas": "0.0.0",
     "@vitejs/plugin-vue": "^4.1.0",
     "@vitejs/plugin-vue-jsx": "^3.1.0",
     "typescript": "^6.0.3",
